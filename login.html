@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeNabi - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2288264db.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="areadebusca.css">
+    <style>
+        #favoritos {
+            padding-left: 717px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header-login">
+        <div class="container container-login">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img-interface/lenabi 1.png" alt="borboleta voando dentro de um livro">
+                    <h2>LeNabi</h2>
+                </div>
+            </a>
+
+            <div id="favoritos" onclick="toggleFavoritos()">
+                <div class="imagem">
+                    <i class="fa-regular fa-heart" style="color: #522318; "></i>
+                </div>
+                <span id="cont-favoritos">0</span>
+            </div>
+            <div id="carrinho-itens" style="display: none;">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0,00</span>
+                <button class="car" onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+            <a href="login.html" class="button"><span>Fazer login</span></a>
+
+            <div class="botaoMenu">
+                <button onclick="toggleMenu()" class="burger material-symbols-outlined">
+                    menu
+                </button>
+            </div>
+        </div>
+        <nav>
+            
+        </nav>
+        <nav class="navbar">
+            <div class="buscar">
+                <input type="text" spellcheck="false" class="buscar" id="buscar" placeholder="Buscar livro"
+                    oninput="buscarProduto()">
+            </div>
+            <nav>
+                <div class=" botoes-login">
+                    <a href="produto.html#pre-venda">Pré-Venda</a>
+                    <a href="produto.html#lancamentos-page">Lançamentos</a>
+                    <a href="produto.html">Produtos</a>
+                    <a href="sustentabilidade.html">Sustentabilidade</a>
+                    <a href="sustentabilidade.html">Favoritos</a>
+                    <a href="sobre-nos.html">Sobre nós</a>
+                    <a  href="login.html">Login</a>
+                    <a href="cadastro.html">Cadastro</a>
+                </div>
+            </nav>
+        </nav>
+    </header>
+    <main id="main-login">
+        <div class="box">
+            <div class="conteudo-login">
+                <div class="titulo">
+                    <h3><span>Bem-vindo </span>de volta!</h3>
+                    <div class="linha-titulo"></div>
+                </div>
+                <div class="campo">
+                    <div class="usuario">
+                        <i class="fa fa-user" style="color: #522318"></i>
+                        <div class="linha-input"></div>
+                        <input type="text" id="nomeUsuario" placeholder="Usuário ou e-mail" name="userInput" required>
+                    </div>
+                    <div class="senha">
+                        <i class="fa-solid fa-key" style="color: #522318" id="iconSenha"></i>
+                        <div class="linha-senha"></div>
+                        <i class="fa-regular fa-eye-slash" style="color: #835248" id="iconOlho"></i>
+                        <input type="password" placeholder="Senha" required id="senhaInput" name="senhaInput">
+                    </div>
+                </div>
+                <div class="outros-registros">
+                    <button id="loginButton">Entrar</button>
+                    <p>Não tem conta? <a href="cadastro.html"><span>Registre-se!</span></a></p>
+                </div>
+                <div class="login-sociais">
+                    <div class="linha-sociais"></div>
+                    <p>ou</p>
+
+                    <div class="icons">
+                        <img src="img-interface/Group 9.svg" alt="">
+                        <img src="img-interface/Group 10.svg" alt="">
+                        <img src="img-interface/Group 11.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <img class="img-login" src="img-interface/valentin-antonini-0eTLk6dA_Ds-unsplash 1.png" alt="">
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="tablet">
+                <nav>
+                    <div class="parte1">
+                        <a href="index.html#but">Produtos</a>
+                        <a href="index.html#lancamentos" class="footer-desktop">Lançamentos</a>
+                        <a href="index.html#header" class="footer-desktop">Pré-venda</a>
+                    </div>
+                    <div class="parte2">
+                        <a href="#" class="footer-desktop">Favoritos</a>
+                        <a href="sustentabilidade.html">Sustentabilidade</a>
+                        <a href="sobre-nos.html">Sobre nós</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-branca"></div>
+            <div class="redes-sociais">
+                <a href="mailto:editoralenabi@gmail.com" target="_blank"><img class="email-footer"
+                        src="img-interface/carbon_email.svg" alt=""></a>
+                <a href="https://www.instagram.com/editoralenabi/?igshid=YTQwZjQ0NmI0OA%3D%3D" target="_blank"><img
+                        class="insta-footer" src="img-interface/uil_instagram.svg" alt=""></a>
+                <a href="https://x.com/LeNabiEditora?t=-ry8Op0ZSihvYuzXTeuZ8w&s=09" target="_blank"><img
+                        class="x-footer" src="img-interface/simple-icons_x.svg" alt=""></a>
+            </div>
+            <div class="footer-branco"></div>
+            <div class="logo-footer">
+                <img src="img-interface/lenabi 1.png" alt="">
+                <h2>LeNabi</h2>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const iconOlho = document.getElementById("iconOlho");
+            const senhaInput = document.getElementById("senhaInput");
+            const loginButton = document.getElementById("loginButton");
+            const userInput = document.getElementById("userInput");
+
+            iconOlho.addEventListener("click", () => {
+                if (senhaInput.type === "password") {
+                    senhaInput.type = "text";
+                    iconOlho.classList.remove("fa-regular");
+                    iconOlho.classList.remove("fa-eye-slash");
+                    iconOlho.classList.add("fa-solid");
+                    iconOlho.classList.add("fa-eye");
+                } else {
+                    senhaInput.type = "password";
+                    iconOlho.classList.remove("fa-solid");
+                    iconOlho.classList.remove("fa-eye");
+                    iconOlho.classList.add("fa-regular");
+                    iconOlho.classList.add("fa-eye-slash");
+                }
+            })
+        });
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginButton = document.getElementById("loginButton");
+
+            if (loginButton) {
+                loginButton.addEventListener("click", realizarLogin);
+            } else {
+                console.error("Elemento 'loginButton' não encontrado. Verifique os IDs no HTML.");
+            }
+
+            function realizarLogin() {
+                const usuariosCadastrados = JSON.parse(localStorage.getItem('usuarios')) || [];
+                const emailUsuario = document.getElementById("nomeUsuario").value;
+                const senha = document.getElementById("senhaInput").value;
+
+                const usuarioEncontrado = usuariosCadastrados.find(user => (
+                    (emailUsuario === user.userInput || emailUsuario === user.email) &&
+                    senha === user.senhaInput
+                ));
+
+                if (usuarioEncontrado) {
+                    // Obtém o nome de usuário e o email do objeto encontrado
+                    const nomeUsuario = usuarioEncontrado.userInput || 'NomeRealDoUsuario';
+                    const emailUsuario = usuarioEncontrado.email || 'EmailDoUsuario';
+
+                    // Armazena o nome e o email do usuário no localStorage
+                    localStorage.setItem('nomeUsuario', nomeUsuario);
+                    localStorage.setItem('emailUsuario', emailUsuario);
+
+                    alert("Login bem-sucedido!");
+
+                    // Redireciona para a página index.html
+                    window.location.href = "index.html";
+                } else {
+                    alert("Credenciais incorretas. Por favor, tente novamente.");
+                }
+            }
+
+
+        })
+
+        const toggleMenu = () => document.body.classList.toggle("open");
+
+        function buscarProduto() {
+            const termoDeBusca = document.getElementById("buscar").value.toLowerCase();
+            const main = document.getElementById("main-login");
+            main.innerHTML = ""; // Limpa o conteúdo atual
+
+            // Realiza a busca nos elementos com a classe "livros" no arquivo "produto.html"
+            fetch("produto.html")
+                .then(response => response.text())
+                .then(data => {
+                    // Crie um elemento temporário para analisar o conteúdo do produto.html
+                    const tempElement = document.createElement("div");
+                    tempElement.innerHTML = data;
+
+                    // Encontra os elementos com a classe "livros" e verifica se o título contém o termo de busca
+                    const livros = tempElement.querySelectorAll(".livros");
+                    livros.forEach(livro => {
+                        const titulo = livro.querySelector("img").alt.toLowerCase();
+
+                        if (titulo.includes(termoDeBusca)) {
+                            main.appendChild(livro.cloneNode(true));
+                        }
+                    });
+
+                    // Adicione a classe "area-de-busca" a main para aplicar os estilos
+                    main.classList.add("area-de-busca");
+
+                    // Verifique se há filhos na área de busca
+                    if (main.children.length === 0) {
+                        main.innerHTML = 'Nenhum resultado encontrado.';
+                        main.style.display = "flex";
+                        main.style.alignItems = "center";
+                        main.style.backgroundColor = "#F8F1EE"; // Cor de fundo quando nenhum resultado é encontrado
+                    }
+                })
+                .catch(error => {
+                    console.error("Erro ao buscar produtos:", error);
+                });
+        }
+    </script>
+    <script src="user.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1573 @@
+@media screen and (min-width:768px) and (max-width:974px) {
+    /* main -interface inicio */
+
+    /* banner */
+    .linhaSeparacao,
+    .scroll-img {
+        display: none;
+    }
+
+
+    .info .name,
+    .info .location,
+    .info .description {
+        display: none;
+    }
+
+    .info {
+        display: none;
+        padding: 0;
+    }
+
+    .info .location {
+        display: none;
+    }
+
+    :root {
+        --card-width: 149px;
+        --card-height: 227px;
+    }
+
+    #banner {
+        height: 344px;
+        position: relative;
+        bottom: 45px;
+
+    }
+
+    .app__bg {
+        height: 414px;
+    }
+
+    /* fim banner */
+
+
+    /* inicio novidades */
+    .circulos {
+        display: none;
+    }
+
+    .novidade h1 {
+        display: flex;
+        position: static;
+        justify-content: center;
+        font-size: 45px;
+    }
+
+    .divsaoUm,
+    .divsaoDois {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+
+    .container-lancamento-mobile {
+        display: none;
+    }
+
+    .container-lancamento {
+        position: relative;
+        left: 10%;
+        top: 5%;
+        transform: translate(-50%, -50%);
+    }
+
+    #slide {
+        width: max-content;
+        margin-top: 143px;
+    }
+
+    .item {
+        width: 160px;
+        height: 231px;
+    }
+
+    .item:nth-child(5) {
+        height: 268px;
+        width: 175px;
+        box-shadow: 2px 6px 20px #522318c6;
+    }
+
+    .item:nth-child(n+6) {
+        left: 0;
+        opacity: 0;
+    }
+
+    #next {
+        position: relative;
+        top: 60vw;
+        left: 23vw;
+    }
+
+    .item .content {
+        position: absolute;
+        top: 171%;
+        left: 55vw;
+        width: 530px;
+        text-align: center;
+        padding: 0;
+        color: #eee;
+        transform: translate(0, -50%);
+        display: none;
+        font-family: system-ui;
+    }
+
+    .item .content .name {
+        font-size: 27px;
+    }
+
+    .item .content .data {
+        font-size: 20px;
+    }
+
+    .item .content .des {
+        font-size: 20px;
+        width: 409px;
+        text-align: center;
+        margin-left: 67px;
+    }
+
+    .item .des a {
+        top: 30px;
+        margin: 29%;
+        padding: 11px 43px;
+        border-radius: 14px;
+        font-size: 18px;
+    }
+
+    .buttons {
+        position: absolute;
+        display: flex;
+        top: 177%;
+        left: -4px;
+        text-align: center;
+    }
+
+    #prev {
+        margin-right: 490px;
+        position: relative;
+        top: 60vw;
+        left: 76vw;
+    }
+
+    .buttons button {
+        width: 57px;
+        height: 57px;
+        border-radius: 50%;
+    }
+
+    /* fim novidades */
+
+    /* produtos */
+
+    .tarja {
+        display: grid;
+        width: 100vw;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .linha-um,
+    .linha-dois {
+        width: 64vw;
+        margin-bottom: 2vw;
+    }
+
+    .linha-botao {
+        width: 64vw;
+        margin: 29px 0px 0px 0px;
+    }
+
+    .botao-linha {
+        margin-top: 2vw;
+        margin-bottom: 9%;
+        margin-left: 0;
+    }
+
+    .info-produtos {
+        display: grid;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botao-linha a {
+        width: 194px;
+        height: 45px;
+        font-size: 22px;
+        margin-top: 1vw;
+    }
+
+    #Produtos {
+        height: auto;
+    }
+
+    .texto {
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        margin: 1vw 0px;
+    }
+
+    /* fim produtos */
+
+    /* scroll trigger */
+
+    #ScrollTrigger {
+        width: 100vw;
+    }
+
+    .divisoria {
+        display: none;
+    }
+
+    .area-parada {
+        display: none;
+    }
+
+    .mobile-scroll {
+        margin-top: 10dvw;
+        background-image: url(img-interface/banner\ scroll.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 353px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 58px;
+    }
+
+    .mobile-scroll .terceiro-mobile {
+        font-family: 'Poppins-regular';
+        font-size: 22.3px;
+        color: white;
+    }
+
+    .mobile-scroll .young-mobile {
+        font-family: 'Young-serif';
+        font-size: 32px;
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-scroll input {
+        background-color: #3C2520;
+        color: white;
+        width: 248px;
+        height: 35px;
+        border-radius: 15px;
+        font-family: 'Poppins-Semi';
+        padding-left: 16px;
+        font-size: 14px;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+        margin-right: 20px
+    }
+
+    .mobile-scroll button {
+        background-color: #3C2520;
+        width: 76px;
+        height: 35px;
+        border-radius: 15px;
+        color: white;
+        font-family: 'Young-serif';
+        font-size: 14px;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+    }
+
+    .container-scroll button:hover {
+        background-color: #B99B8D;
+        color: #3C2520;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+        transition: .3s ease-in-out;
+    }
+
+    /* fim scroll trigger */
+
+
+        /* sustentabilidade */
+        #sustentabilidade {
+            height: 740px;
+        }
+    
+        .sustentabilidade {
+            height: 624px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .sustentavel-img {
+            height: 206px;
+        }
+    
+        .circle-um,
+        .circle-dois {
+            width: 160px;
+            height: 160px;
+        }
+    
+        .circle-um {
+            top: 103px;
+            left: 83px;
+        }
+    
+        .circle-dois {
+            top: 22px;
+            left: 112px;
+        }
+    
+        .mao-terra {
+            width: 185px;
+            height: 249px;
+            left: 115px;
+            bottom: 256px;
+        }
+    
+        .papel {
+            width: 150px;
+            bottom: 178px;
+            left: 19px;
+        }
+    
+        .sustentavel-img h2 {
+            top: -250px;
+            left: 245px;
+            font-size: 21px;
+            width: 61px;
+        }
+    
+        .logo-sustevel {
+            width: 103px;
+            bottom: 262px;
+            right: 111px;
+        }
+    
+        .linhaSeparacao {
+            display: none;
+        }
+    
+        .textoSustentavel {
+            text-align: center;
+            margin-right: 5px;
+        }
+    
+        .textoSustentavel h1 {
+            font-size: 30px;
+        }
+    
+        .textoSustentavel p {
+            font-family: 'Poppins-regular';
+            width: 343px;
+            font-size: 17px;
+            margin: 25px 0;
+        }
+    
+        /* fim sustentabilidade */
+
+}
+
+
+@media screen and (max-width: 767px) and (min-width:529px) {
+
+    /* main -interface inicio */
+    /* banner */
+    .linhaSeparacao,
+    .scroll-img {
+        display: none;
+    }
+
+
+    .info .name,
+    .info .location,
+    .info .description {
+        display: none;
+    }
+
+    .info {
+        display: none;
+        padding: 0;
+    }
+
+    .info .location {
+        display: none;
+    }
+
+    :root {
+        --card-width: 133px;
+        --card-height: 203px;
+    }
+
+    #banner {
+        height: 321px;
+        position: relative;
+        bottom: 45px;
+
+    }
+
+    .app__bg {
+        height: 400px;
+    }
+
+    /* fim banner */
+
+    /* novidades */
+
+    .circulos {
+        display: none;
+    }
+
+    .novidade h1 {
+        display: flex;
+        position: static;
+        justify-content: center;
+        font-size: 45px;
+    }
+
+    .divsaoUm,
+    .divsaoDois {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+
+    .container-lancamento {
+        display: none;
+    }
+
+    .container-lancamento-mobile {
+        height: 41%;
+        overflow: hidden;
+        display: flex;
+        padding: 0 9vw;
+        width: 100%;
+    }
+
+    #slide-mobile {
+        display: flex;
+        width: 300%;
+        /* Um slide à esquerda e um à direita para garantir espaço suficiente */
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .content-mobile {
+        border: none;
+        text-align: center;
+        display: grid;
+        width: 80vw;
+        justify-items: center;
+    }
+
+    .item-mobile {
+        width: 100%;
+        height: 80%;
+        box-sizing: border-box;
+    }
+
+    .item-mobile .content-mobile .name-mobile {
+        font-family: 'Poppins-Semi';
+        font-size: 25px;
+        color: #522318;
+    }
+
+    .item-mobile .content-mobile .data-mobile {
+        font-family: 'Poppins-medium';
+        font-size: 16px;
+        color: #522318;
+    }
+
+    .item-mobile .content-mobile .des-mobile {
+        font-family: 'Poppins-regular';
+        font-size: 18px;
+        color: #522318;
+        text-align: center;
+    }
+
+
+    .item-mobile .content-mobile a {
+        background: #522318;
+        color: white;
+        padding: 8px 27px;
+        border-radius: 14px;
+        font-size: 16px;
+        margin: 0;
+        box-shadow: 4px 4px 5px #3C2520;
+        margin-bottom: 28px;
+        width: 250px;
+    }
+
+    #but-mobile {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 12vw;
+    }
+
+    #proximo {
+        position: relative;
+        right: 1vw;
+    }
+
+    .buttons-mobile {
+        position: static;
+        text-align: center;
+    }
+
+    #lancamentos {
+        height: auto;
+    }
+
+    /* fim novidades */
+
+    /* produtos */
+
+    .tarja {
+        width: 100vw;
+        height: 109px;
+    }
+
+    .linha-um {
+        width: 69vw;
+        margin: 0px 0px 0px 15vw;
+    }
+
+    .linha-dois {
+        width: 69vw;
+        margin: 0px 0px 4vw 15vw;
+    }
+
+    .botao-linha {
+        margin: 0 39px;
+    }
+
+    .linha-botao {
+        width: 69vw;
+        margin: 29px 0px 0px 0px;
+    }
+
+    .info-produtos {
+        display: grid;
+        width: 100vw;
+        margin: 0;
+        justify-items: center;
+        padding-bottom: 7%;
+    }
+
+    .detalhes,
+    .detalhes-library {
+        display: none;
+    }
+
+    .library-mobile,
+    .detalhes-mobile {
+        display: flex;
+    }
+
+    .texto img {
+        width: 60px;
+    }
+
+    .texto p {
+        font-size: 17px;
+        width: 59vw;
+        padding-left: 3vw;
+    }
+
+    .tarja p span {
+        font-size: 42px;
+    }
+
+    .tarja p {
+        display: grid;
+        padding: 8px 0;
+        justify-items: center;
+        font-size: 26px;
+    }
+
+    .texto {
+        height: 11vw;
+        margin: 0 2vw;
+        padding: 6.3vw 0;
+    }
+
+    .botao-linha a {
+        margin-top: 1.5vw;
+        width: 167px;
+        height: 42px;
+        border-radius: 13px;
+        font-size: 19px;
+    }
+
+    #Produtos {
+        height: auto;
+    }
+
+    .conteudo {
+        width: 100vw;
+    }
+
+    /* fim produtos */
+
+    /* scroll trigger */
+
+    #ScrollTrigger {
+        width: 100vw;
+    }
+
+    .divisoria {
+        display: none;
+    }
+
+    .area-parada {
+        display: none;
+    }
+
+    .mobile-scroll {
+        margin-top: 10dvw;
+        background-image: url(img-interface/banner\ scroll.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 287px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 58px;
+    }
+
+    .mobile-scroll .terceiro-mobile {
+        font-family: 'Poppins-regular';
+        font-size: 21.3px;
+        color: white;
+    }
+
+    .mobile-scroll .young-mobile {
+        font-family: 'Young-serif';
+        font-size: 30px;
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-scroll input {
+        background-color: #3C2520;
+        color: white;
+        width: 326px;
+        height: 35px;
+        border-radius: 15px;
+        font-family: 'Poppins-Semi';
+        padding-left: 16px;
+        font-size: 14px;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+        margin-right: 20px
+    }
+
+    .mobile-scroll button {
+        background-color: #3C2520;
+        width: 76px;
+        height: 35px;
+        border-radius: 15px;
+        color: white;
+        font-family: 'Young-serif';
+        font-size: 14px;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+    }
+
+    .container-scroll button:hover {
+        background-color: #B99B8D;
+        color: #3C2520;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+        transition: .3s ease-in-out;
+    }
+
+    /* fim scroll trigger */
+
+
+    /* sustentabilidade */
+    #sustentabilidade {
+        height: 740px;
+    }
+
+    .sustentabilidade {
+        height: 624px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sustentavel-img {
+        height: 206px;
+    }
+
+    .circle-um,
+    .circle-dois {
+        width: 160px;
+        height: 160px;
+    }
+
+    .circle-um {
+        top: 103px;
+        left: 83px;
+    }
+
+    .circle-dois {
+        top: 22px;
+        left: 112px;
+    }
+
+    .mao-terra {
+        width: 185px;
+        height: 249px;
+        left: 115px;
+        bottom: 256px;
+    }
+
+    .papel {
+        width: 150px;
+        bottom: 178px;
+        left: 19px;
+    }
+
+    .sustentavel-img h2 {
+        top: -250px;
+        left: 245px;
+        font-size: 21px;
+        width: 61px;
+    }
+
+    .logo-sustevel {
+        width: 103px;
+        bottom: 262px;
+        right: 111px;
+    }
+
+    .linhaSeparacao {
+        display: none;
+    }
+
+    .textoSustentavel {
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .textoSustentavel h1 {
+        font-size: 30px;
+    }
+
+    .textoSustentavel p {
+        font-family: 'Poppins-regular';
+        width: 343px;
+        font-size: 17px;
+        margin: 25px 0;
+    }
+
+    /* fim sustentabilidade */
+
+}
+
+
+@media screen and (max-width: 530px) and (min-width:399px) {
+
+    /* main -interface inicio */
+
+    /* banner */
+    .linhaSeparacao,
+    .scroll-img {
+        display: none;
+    }
+
+
+    .info .name,
+    .info .location,
+    .info .description {
+        display: none;
+    }
+
+    .info {
+        display: none;
+        padding: 0;
+    }
+
+    .info .location {
+        display: none;
+    }
+
+    :root {
+        --card-width: 116px;
+        --card-height: 178px;
+    }
+
+    #banner {
+        height: 296px;
+        position: relative;
+        bottom: 45px;
+
+    }
+
+    .app__bg {
+        height: 387px;
+    }
+
+    /* fim banner */
+
+    /* novidades */
+
+    .circulos {
+        display: none;
+    }
+
+    .novidade h1 {
+        display: flex;
+        position: static;
+        justify-content: center;
+        font-size: 45px;
+    }
+
+    .divsaoUm,
+    .divsaoDois {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+
+    .container-lancamento {
+        display: none;
+    }
+
+    .container-lancamento-mobile {
+        height: 41%;
+        overflow: hidden;
+        display: flex;
+        padding: 0 9vw;
+        width: 100%;
+    }
+
+    #slide-mobile {
+        display: flex;
+        width: 300%;
+        /* Um slide à esquerda e um à direita para garantir espaço suficiente */
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .content-mobile {
+        border: none;
+        text-align: center;
+        display: grid;
+        width: 80vw;
+        justify-items: center;
+    }
+
+    .item-mobile {
+        width: 100%;
+        height: 80%;
+        box-sizing: border-box;
+    }
+
+    .item-mobile .content-mobile .name-mobile {
+        font-family: 'Poppins-Semi';
+        font-size: 25px;
+        color: #522318;
+    }
+
+    .item-mobile .content-mobile .data-mobile {
+        font-family: 'Poppins-medium';
+        font-size: 16px;
+        color: #522318;
+    }
+
+    .item-mobile .content-mobile .des-mobile {
+        font-family: 'Poppins-regular';
+        font-size: 18px;
+        color: #522318;
+        text-align: center;
+    }
+
+
+    .item-mobile .content-mobile a {
+        background: #522318;
+        color: white;
+        padding: 8px 27px;
+        border-radius: 14px;
+        font-size: 16px;
+        margin: 0;
+        box-shadow: 4px 4px 5px #3C2520;
+        margin-bottom: 5vw;
+        width: 250px;
+    }
+
+    #but-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 140px;
+    }
+
+
+
+    .buttons-mobile {
+        position: static;
+        text-align: center;
+    }
+
+    #lancamentos {
+        height: auto;
+    }
+
+    /* main interface fim */
+
+    /* produtos */
+
+    .tarja {
+        width: 100vw;
+        height: 109px;
+    }
+
+    .linha-um {
+        width: 69vw;
+        margin: 0px 0px 0px 15vw;
+    }
+
+    .linha-dois {
+        width: 69vw;
+        margin: 0px 0px 4vw 15vw;
+    }
+
+    .botao-linha {
+        margin: 0 39px;
+    }
+
+    .linha-botao {
+        width: 69vw;
+        margin: 29px 0px 0px 0px;
+    }
+
+    .info-produtos {
+        display: grid;
+        width: 100vw;
+        margin: 0;
+        justify-items: center;
+        padding-bottom: 11%;
+    }
+
+    .detalhes,
+    .detalhes-library {
+        display: none;
+    }
+
+    .library-mobile,
+    .detalhes-mobile {
+        display: flex;
+    }
+
+    .texto img {
+        width: 60px;
+    }
+
+    .texto p {
+        font-size: 17px;
+        width: 59vw;
+        padding-left: 3vw;
+    }
+
+    .tarja p span {
+        font-size: 42px;
+    }
+
+    .tarja p {
+        display: grid;
+        padding: 8px 0;
+        justify-items: center;
+        font-size: 26px;
+    }
+
+    .texto {
+        height: 16vw;
+        margin: 2vw;
+        padding: 6.3vw 0;
+    }
+
+    .botao-linha a {
+        margin-top: 1.5vw;
+        width: 167px;
+        height: 42px;
+        border-radius: 13px;
+        font-size: 19px;
+    }
+
+    #Produtos {
+        height: auto;
+    }
+
+    .conteudo {
+        width: 100vw;
+    }
+
+    /* fim produtos */
+
+    /* scroll trigger */
+
+    #ScrollTrigger {
+        width: 100vw;
+    }
+
+    .divisoria {
+        display: none;
+    }
+
+    .area-parada {
+        display: none;
+    }
+
+    .mobile-scroll {
+        margin-top: 10dvw;
+        background-image: url(img-interface/banner\ scroll.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 258px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 58px;
+    }
+
+    .mobile-scroll .terceiro-mobile {
+        font-family: 'Poppins-regular';
+        font-size: 18.3px;
+        color: white;
+    }
+
+    .mobile-scroll .young-mobile {
+        font-family: 'Young-serif';
+        font-size: 27px;
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-scroll input {
+        background-color: #3C2520;
+        color: white;
+        width: 232px;
+        height: 35px;
+        border-radius: 15px;
+        font-family: 'Poppins-Semi';
+        padding-left: 16px;
+        font-size: 14px;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+        margin-right: 20px
+    }
+
+    .mobile-scroll button {
+        background-color: #3C2520;
+        width: 76px;
+        height: 35px;
+        border-radius: 15px;
+        color: white;
+        font-family: 'Young-serif';
+        font-size: 14px;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+    }
+
+    .container-scroll button:hover {
+        background-color: #B99B8D;
+        color: #3C2520;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+        transition: .3s ease-in-out;
+    }
+
+    /* fim scroll trigger */
+
+        /* sustentabilidade */
+        #sustentabilidade {
+            height: 740px;
+        }
+    
+        .sustentabilidade {
+            height: 624px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .sustentavel-img {
+            height: 206px;
+        }
+    
+        .circle-um,
+        .circle-dois {
+            width: 160px;
+            height: 160px;
+        }
+    
+        .circle-um {
+            top: 103px;
+            left: 83px;
+        }
+    
+        .circle-dois {
+            top: 22px;
+            left: 112px;
+        }
+    
+        .mao-terra {
+            width: 185px;
+            height: 249px;
+            left: 115px;
+            bottom: 256px;
+        }
+    
+        .papel {
+            width: 150px;
+            bottom: 178px;
+            left: 19px;
+        }
+    
+        .sustentavel-img h2 {
+            top: -250px;
+            left: 245px;
+            font-size: 21px;
+            width: 61px;
+        }
+    
+        .logo-sustevel {
+            width: 103px;
+            bottom: 262px;
+            right: 111px;
+        }
+    
+        .linhaSeparacao {
+            display: none;
+        }
+    
+        .textoSustentavel {
+            text-align: center;
+            margin-right: 5px;
+        }
+    
+        .textoSustentavel h1 {
+            font-size: 30px;
+        }
+    
+        .textoSustentavel p {
+            font-family: 'Poppins-regular';
+            width: 343px;
+            font-size: 17px;
+            margin: 25px 0;
+        }
+    
+        /* fim sustentabilidade */
+}
+
+
+@media screen and (max-width: 400px) {
+
+    /* banner */
+    .scroll-img {
+        display: none;
+    }
+
+
+    .info .name,
+    .info .location,
+    .info .description {
+        display: none;
+    }
+
+    .info {
+        display: none;
+        padding: 0;
+    }
+
+    .info .location {
+        display: none;
+    }
+
+    :root {
+        --card-width: 98px;
+        --card-height: 157px;
+    }
+
+
+    #banner {
+        height: 296px;
+        position: relative;
+        bottom: 45px;
+
+    }
+
+    .app__bg {
+        height: 387px;
+    }
+
+    /* banner */
+
+    /* novidades */
+    .circulos {
+        display: none;
+    }
+
+    .novidade h1 {
+        display: flex;
+        position: static;
+        justify-content: center;
+        font-size: 45px;
+    }
+
+    .divsaoUm,
+    .divsaoDois {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+
+    .container-lancamento {
+        display: none;
+    }
+
+    .container-lancamento-mobile {
+        height: 41%;
+        overflow: hidden;
+        display: flex;
+        padding: 0 10vw;
+        width: 100%;
+    }
+
+    #slide-mobile {
+        display: flex;
+        width: 300%;
+        /* Um slide à esquerda e um à direita para garantir espaço suficiente */
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .content-mobile {
+        border: none;
+        text-align: center;
+        display: grid;
+        width: 80vw;
+    }
+
+    .item-mobile {
+        width: 100%;
+        height: 80%;
+        box-sizing: border-box;
+    }
+
+    .item-mobile .content-mobile .name-mobile {
+        font-family: 'Poppins-Semi';
+        font-size: 23px;
+        color: #522318;
+    }
+
+    .item-mobile .content-mobile .data-mobile {
+        font-family: 'Poppins-medium';
+        font-size: 16px;
+        color: #522318;
+    }
+
+    .item-mobile .content-mobile .des-mobile {
+        font-family: 'Poppins-regular';
+        font-size: 16px;
+        color: #522318;
+        text-align: center;
+    }
+
+
+    .item-mobile .content-mobile a {
+        background: #522318;
+        color: white;
+        padding: 8px 27px;
+        border-radius: 14px;
+        font-size: 16px;
+        margin: 0;
+        box-shadow: 4px 4px 5px #3C2520;
+        margin-bottom: 28px;
+    }
+
+    #but-mobile {
+        display: flex;
+        align-items: center;
+        padding: 0 53px;
+        justify-content: space-evenly;
+        margin-bottom: 15%;
+    }
+
+    .buttons-mobile {
+        position: static;
+        text-align: center;
+    }
+
+    #lancamentos {
+        height: auto;
+    }
+
+    /* fim novidades */
+
+    /* produtos */
+
+    .tarja {
+        width: 100vw;
+        height: 109px;
+    }
+
+    .linha-um {
+        width: 69vw;
+        margin: 0px 0px 0px 15vw;
+    }
+
+    .linha-dois {
+        width: 69vw;
+        margin: 0px 0px 4vw 15vw;
+    }
+
+    .botao-linha {
+        margin: 0 39px;
+    }
+
+    .linha-botao {
+        width: 69vw;
+        margin: 29px 0px 0px 0px;
+    }
+
+    .info-produtos {
+        display: grid;
+        width: 100vw;
+        margin: 0;
+        justify-items: center;
+        padding-bottom: 11%;
+    }
+
+    .detalhes,
+    .detalhes-library {
+        display: none;
+    }
+
+    .library-mobile,
+    .detalhes-mobile {
+        display: flex;
+    }
+
+    .texto img {
+        width: 51px;
+    }
+
+    .texto p {
+        font-size: 16px;
+        width: 59vw;
+        padding-left: 3vw;
+    }
+
+    .tarja p span {
+        font-size: 37px;
+    }
+
+    .tarja p {
+        display: grid;
+        padding: 8px 0;
+        justify-items: center;
+        font-size: 23px;
+    }
+
+    .texto {
+        height: 11vw;
+        margin: 3vw;
+        padding: 8.2vw 0;
+    }
+
+    .botao-linha a {
+        margin-top: 2.5vw;
+        width: 147px;
+        height: 37px;
+        border-radius: 13px;
+        font-size: 17px;
+    }
+
+    #Produtos {
+        height: auto;
+    }
+
+    .conteudo {
+        width: 100vw;
+    }
+
+    /* fim produtos */
+
+    /* scroll trigger */
+
+    #ScrollTrigger {
+        width: 100vw;
+    }
+
+    .divisoria {
+        display: none;
+    }
+
+    .area-parada {
+        display: none;
+    }
+
+    .mobile-scroll {
+        margin-top: 10vw;
+        background-image: url(img-interface/banner\ scroll.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 258px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 58px;
+    }
+
+    .mobile-scroll .terceiro-mobile {
+        font-family: 'Poppins-regular';
+        font-size: 17px;
+        color: white;
+    }
+
+    .mobile-scroll .young-mobile {
+        font-family: 'Young-serif';
+        font-size: 25px;
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-scroll input {
+        background-color: #3C2520;
+        color: white;
+        width: 232px;
+        height: 35px;
+        border-radius: 15px;
+        font-family: 'Poppins-Semi';
+        padding-left: 16px;
+        font-size: 14px;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+        margin-right: 20px
+    }
+
+    .mobile-scroll button {
+        background-color: #3C2520;
+        width: 76px;
+        height: 35px;
+        border-radius: 15px;
+        color: white;
+        font-family: 'Young-serif';
+        font-size: 14px;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+        margin-top: 5vw;
+    }
+
+    .container-scroll button:hover {
+        background-color: #B99B8D;
+        color: #3C2520;
+        box-shadow: 3px 3px 5px #d4bda7ad;
+        transition: .3s ease-in-out;
+    }
+
+    /* fim scroll trigger */
+
+       /* sustentabilidade */
+       #sustentabilidade {
+        height: 740px;
+    }
+
+    .sustentabilidade {
+        height: 624px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sustentavel-img {
+        margin: 0 -22px;
+    }
+
+    .circle-um,
+    .circle-dois {
+        width: 160px;
+        height: 160px;
+    }
+
+    .circle-um {
+        top: 103px;
+        left: 83px;
+    }
+
+    .circle-dois {
+        top: 22px;
+        left: 112px;
+    }
+
+    .mao-terra {
+        width: 185px;
+        height: 249px;
+        left: 115px;
+        bottom: 256px;
+    }
+
+    .papel {
+        width: 150px;
+        bottom: 178px;
+        left: 19px;
+    }
+
+    .sustentavel-img h2 {
+        top: -328px;
+        left: 62.2vw;
+        font-size: 21px;
+        width: 61px;
+        bottom: 80vw;
+
+    }
+
+    .logo-sustevel {
+        width: 103px;
+        right: 0;
+        left: 231px;
+        bottom: 351px;
+    }
+
+    .linhaSeparacao {
+        display: none;
+    }
+
+    .textoSustentavel {
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .textoSustentavel h1 {
+        font-size: 25px;
+    }
+
+    .textoSustentavel p {
+        font-family: 'Poppins-regular';
+        width: 343px;
+        font-size: 17px;
+        margin: 25px 0;
+    }
+
+    /* fim sustentabilidade */
+
+}

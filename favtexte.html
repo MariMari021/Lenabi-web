@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.product {
+  margin-bottom: 10px;
+}
+
+.heart {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('heart-empty.png') no-repeat;
+  cursor: pointer;
+}
+
+.heart.favorite {
+  background: url('heart-filled.png') no-repeat;
+}
+
+.cart-info {
+  margin-top: 20px;
+}
+
+
+</style>
+<body>
+
+  <div class="container">
+    <div class="product" id="product1">
+      <span class="heart" onclick="toggleFavorite('product1')"></span>
+      Produto 1
+    </div>
+    <div class="product" id="product2">
+      <span class="heart" onclick="toggleFavorite('product2')"></span>
+      Produto 2
+    </div>
+    <!-- Adicione mais produtos conforme necessário -->
+
+    <div class="cart-info">
+      <span id="cartCount">0</span>
+      <button onclick="clearCart()">Limpar Carrinho</button>
+    </div>
+  </div>
+
+ <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  updateCartCount();
+  restoreFavorites();
+});
+
+function toggleFavorite(productId) {
+  const heart = document.getElementById(productId).querySelector('.heart');
+  const isFavorite = heart.classList.toggle('favorite');
+
+  // Update LocalStorage with the favorite status
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+  favorites[productId] = isFavorite;
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+
+  // Update cart count
+  updateCartCount();
+}
+
+function updateCartCount() {
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+  const cartCount = Object.values(favorites).filter(Boolean).length;
+  document.getElementById('cartCount').textContent = cartCount;
+
+  // Disable "Limpar Carrinho" button if the cart is empty
+  const clearCartButton = document.querySelector('.cart-info button');
+  clearCartButton.disabled = cartCount === 0;
+}
+
+function clearCart() {
+  // Clear favorites in LocalStorage
+  localStorage.removeItem('favorites');
+
+  // Reset heart icons and update cart count
+  document.querySelectorAll('.heart').forEach((heart) => {
+    heart.classList.remove('favorite');
+  });
+  updateCartCount();
+}
+
+function restoreFavorites() {
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+  Object.entries(favorites).forEach(([productId, isFavorite]) => {
+    const heart = document.getElementById(productId).querySelector('.heart');
+    if (isFavorite) {
+      heart.classList.add('favorite');
+    }
+  });
+}
+
+ </script>
+</body>
+</html>

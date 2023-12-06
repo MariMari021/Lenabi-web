@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.livros2{
+    margin: 0;
+  }
+  
+  .livros img {
+    margin: 0 8.5%;
+    border-radius: 3px;
+    height: auto;
+    width: 148px;
+    box-shadow: 7px 7px #B99B8D;
+  }
+  
+  .livros h2 {
+    font-family: 'Young-serif';
+    font-size: 23px;
+    color: #3C2520;
+  }
+  
+  .livros p {
+    font-family: 'Poppins-regular';
+    font-size: 15px;
+    padding-bottom: 3.5%;
+  }
+  
+  .buttonPreco {
+    left: 43px;
+    bottom: 30px;
+  }
+  
+  .preco2 {
+    bottom: 40px;
+  }
+  
+  .buttonPreco h3 {
+    padding-left: 7%;
+    font-size: 22px;
+  }
+  
+  .l-dois {
+    margin: 3% 13.3%;
+  }
+
+  .buttonPreco {
+    display: flex;
+    width: 191px;
+    height: 47px;
+    background-color: #3C2520;
+    position: relative;
+    font-family: 'Poppins-bold';
+    color: #F8F1EE;
+    font-size: 20px;
+    border-radius: 6px;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .buttonPreco h3 {
+    padding-left: 7%;
+  }
+  
+  .buttonPreco:hover {
+    transform: translateY(-10px);
+  }
+  .buttonPreco::before {
+    content: "Ver Mais";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #3C2520;
+    transition: background-color 0.2s; /* Adiciona uma transição suave para a cor de fundo */
+    opacity: 0;
+    pointer-events: none; /* Evita que o elemento "hover" seja clicável */
+  }
+  .buttonPreco:hover::before {
+    opacity: 3; /* Torna o elemento "hover" visível quando o botão é hover */
+    background-color:  #3C2520; /* Muda a cor de fundo quando hover */
+  }
+  
+
+.livros {
+    margin: 5.5% 0;
+    padding: 2% 0;
+    border-radius: 14px;
+    display: grid;
+    width: 236px;
+    height: 350px;
+    background-color: #FFEFDF;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  /* Estilo para a área de busca */
+  .area-de-busca {
+    padding-top: 21px;
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Poppins-Semi';
+    color: #9a594b;
+    border-radius: 17px;
+    min-height: 470px;
+  }
+  
+  .area-de-busca .livros2 {
+    margin: 3% 0;
+    margin-bottom: 5%;
+  }
+  
+  .area-de-busca .livros {
+    margin: 3% 3%;
+    background-color:#3C2520 ;
+     color:#FFEFDF; 
+  }
+  
+  .area-de-busca .livros h2{
+    color:#FFEFDF;
+  }
+  
+  .area-de-busca .livros .buttonPreco{
+    background-color: #FFEFDF;
+    border: 1.5px #3c252075 solid;
+  }
+  
+  .area-de-busca .livros h3{
+    color: #3C2520;
+  }
+  
+  .area-de-busca .livros img{
+    box-shadow: 7px 7px #E3C7BA;
+  }
+  

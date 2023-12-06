@@ -1,0 +1,56 @@
+<!-- admin.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle - Admin</title>
+</head>
+<body>
+    <h1>Painel de Controle - Admin</h1>
+
+    <!-- Lista de Usuários -->
+    <ul id="listaUsuarios"></ul>
+
+    <script>
+        // Função para carregar e exibir a lista de usuários
+        function carregarUsuarios() {
+            const listaUsuariosElement = document.getElementById("listaUsuarios");
+            listaUsuariosElement.innerHTML = "";
+    
+            const usuariosCadastrados = JSON.parse(localStorage.getItem('usuarios')) || [];
+    
+            usuariosCadastrados.forEach((usuario, index) => {
+                const liElement = document.createElement("li");
+                liElement.textContent = `${usuario.nome} (${usuario.email})`;
+    
+                const botaoExcluir = document.createElement("button");
+                botaoExcluir.textContent = "Excluir";
+                botaoExcluir.addEventListener("click", () => excluirUsuario(index));
+    
+                liElement.appendChild(botaoExcluir);
+                listaUsuariosElement.appendChild(liElement);
+            }); // Remova o parêntese extra aqui
+        }
+    
+        // Função para excluir um usuário
+        function excluirUsuario(index) {
+            const usuariosCadastrados = JSON.parse(localStorage.getItem('usuarios')) || [];
+    
+            // Remove o usuário da lista
+            usuariosCadastrados.splice(index, 1);
+    
+            // Atualiza o localStorage com a lista atualizada de usuários
+            localStorage.setItem('usuarios', JSON.stringify(usuariosCadastrados));
+    
+            // Recarrega a lista de usuários na interface
+            carregarUsuarios();
+        }
+    
+        // Chama a função para carregar a lista de usuários ao carregar a página
+        carregarUsuarios();
+    </script>
+    
+</body>
+</html>

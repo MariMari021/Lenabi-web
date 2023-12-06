@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editora LeNabi</title>
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="style7.css">
-    <link rel="stylesheet" href="produto.css">
     <script src="https://kit.fontawesome.com/a2288264db.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img-interface/lenabi 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="produto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="stylemobile.css">
+    <!-- <script src="user.js"></script> -->
 
 </head>
 
@@ -47,20 +53,65 @@
                         <span id="conteudoPopup"></span>
                         <span id="emailUsuario"></span>
                         <br>
-                        
+
                     </div>
-                   <button class="botaoSair" onclick="logout()"> <p>Sair</p>
-                        <i id="logoutButton" class="fa-solid fa-arrow-right-from-bracket"
-                            ></i></button>
+                    <button class="botaoSair" onclick="logout()">
+                        <p>Sair</p>
+                        <i id="logoutButton" class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </button>
                 </div>
-
-
-
                 <a href="login.html" class="button" id="loginButton"><span>Fazer login</span></a>
+                <div class="botaoMenu">
+                    <button onclick="toggleMenu()" class="burger material-symbols-outlined">
+                        menu
+                    </button>
+                </div>
             </div>
+            <nav class="navbar" >
+                <div class="buscarMobile">
+                    <input type="text" spellcheck="false" class="buscarMobile" id="buscarMobile"
+                        placeholder="Buscar livro" oninput="buscarMobile()">
+                </div>
+                <nav>
+                    <div class=" botoes-login">
+                        <a href="produto.html#pre-venda">Pré-Venda</a>
+                        <a href="produto.html#lancamentos-page">Lançamentos</a>
+                        <a href="produto.html">Produtos</a>
+                        <a href="sustentabilidade.html">Sustentabilidade</a>
+                        <a href="sustentabilidade.html">Favoritos</a>
+                        <a href="sobre-nos.html">Sobre nós</a>
+                        <a id="sideUser" href="login.html">Login</a>
+                        <div class="logado-mobile" id="userHeaderMobile" onclick="toggleMobile()">
+                            <i class="fa-solid fa-user" style="color: #522318;"></i>
+                            <span id="userMobile"></span>
+                        </div>
+                    </div>
+                </nav>
+            </nav>
+            <nav class="navbarUser">
+                <nav>
+                    <div id="popupMobile">
+                        <div class="popupMobileAll">
+                            <img src="img-interface/Group 20.svg" alt="">
+                            <span id="conteudoMobile"></span>
+                            <span id="emailMobile"></span>
+                            <br>
+                            
+                        </div>
+                       <button class="botaoSairMobile" onclick="logout()"> <p>Sair</p>
+                            <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"
+                                ></i></button>
+                    </div>
+                    
+                </nav>
+            </nav>
+        </div>
+       
+
+        </div>
         </div>
 
-        <nav>
+        <nav class="navDesktop">
             <div class="botoes">
                 <a href="produto.html#pre-venda">Pré-Venda</a>
                 <a href="produto.html#lancamentos-page">Lançamentos</a>
@@ -70,7 +121,6 @@
             </div>
         </nav>
     </header>
-
 
     <main id="main">
         <div class="retangulo">

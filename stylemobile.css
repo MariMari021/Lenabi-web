@@ -295,86 +295,86 @@
     /* fim scroll trigger */
 
 
-        /* sustentabilidade */
-        #sustentabilidade {
-            height: 740px;
-        }
-    
-        .sustentabilidade {
-            height: 624px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .sustentavel-img {
-            height: 206px;
-        }
-    
-        .circle-um,
-        .circle-dois {
-            width: 160px;
-            height: 160px;
-        }
-    
-        .circle-um {
-            top: 103px;
-            left: 83px;
-        }
-    
-        .circle-dois {
-            top: 22px;
-            left: 112px;
-        }
-    
-        .mao-terra {
-            width: 185px;
-            height: 249px;
-            left: 115px;
-            bottom: 256px;
-        }
-    
-        .papel {
-            width: 150px;
-            bottom: 178px;
-            left: 19px;
-        }
-    
-        .sustentavel-img h2 {
-            top: -250px;
-            left: 245px;
-            font-size: 21px;
-            width: 61px;
-        }
-    
-        .logo-sustevel {
-            width: 103px;
-            bottom: 262px;
-            right: 111px;
-        }
-    
-        .linhaSeparacao {
-            display: none;
-        }
-    
-        .textoSustentavel {
-            text-align: center;
-            margin-right: 5px;
-        }
-    
-        .textoSustentavel h1 {
-            font-size: 30px;
-        }
-    
-        .textoSustentavel p {
-            font-family: 'Poppins-regular';
-            width: 343px;
-            font-size: 17px;
-            margin: 25px 0;
-        }
-    
-        /* fim sustentabilidade */
+    /* sustentabilidade */
+    #sustentabilidade {
+        height: 740px;
+    }
+
+    .sustentabilidade {
+        height: 624px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sustentavel-img {
+        height: 206px;
+    }
+
+    .circle-um,
+    .circle-dois {
+        width: 160px;
+        height: 160px;
+    }
+
+    .circle-um {
+        top: 103px;
+        left: 83px;
+    }
+
+    .circle-dois {
+        top: 22px;
+        left: 112px;
+    }
+
+    .mao-terra {
+        width: 185px;
+        height: 249px;
+        left: 115px;
+        bottom: 256px;
+    }
+
+    .papel {
+        width: 150px;
+        bottom: 178px;
+        left: 19px;
+    }
+
+    .sustentavel-img h2 {
+        top: -250px;
+        left: 245px;
+        font-size: 21px;
+        width: 61px;
+    }
+
+    .logo-sustevel {
+        width: 103px;
+        bottom: 262px;
+        right: 111px;
+    }
+
+    .linhaSeparacao {
+        display: none;
+    }
+
+    .textoSustentavel {
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .textoSustentavel h1 {
+        font-size: 30px;
+    }
+
+    .textoSustentavel p {
+        font-family: 'Poppins-regular';
+        width: 343px;
+        font-size: 17px;
+        margin: 25px 0;
+    }
+
+    /* fim sustentabilidade */
 
 }
 
@@ -697,6 +697,12 @@
 
 
     /* sustentabilidade */
+
+    .sustentavelMobile {
+        display: none;
+    }
+
+
     #sustentabilidade {
         height: 740px;
     }
@@ -780,16 +786,27 @@
 }
 
 
-@media screen and (max-width: 530px) and (min-width:399px) {
+@media screen and (max-width:530px) and (min-width: 400px) {
 
     /* main -interface inicio */
 
     /* banner */
     .linhaSeparacao,
-    .scroll-img {
+    .scroll-img,
+    .sustentabilidade {
         display: none;
     }
 
+    .sustentavelMobile {
+        display: grid;
+        justify-items: center;
+    }
+
+    .sustentavelMobile img {
+        width: 252px;
+        height: 319px;
+
+    }
 
     .info .name,
     .info .location,
@@ -915,6 +932,7 @@
         align-items: center;
         justify-content: space-evenly;
         padding: 0 140px;
+        margin-bottom: 12vw;
     }
 
 
@@ -1094,94 +1112,136 @@
 
     /* fim scroll trigger */
 
-        /* sustentabilidade */
-        #sustentabilidade {
-            height: 740px;
-        }
-    
-        .sustentabilidade {
-            height: 624px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .sustentavel-img {
-            height: 206px;
-        }
-    
-        .circle-um,
-        .circle-dois {
-            width: 160px;
-            height: 160px;
-        }
-    
-        .circle-um {
-            top: 103px;
-            left: 83px;
-        }
-    
-        .circle-dois {
-            top: 22px;
-            left: 112px;
-        }
-    
-        .mao-terra {
-            width: 185px;
-            height: 249px;
-            left: 115px;
-            bottom: 256px;
-        }
-    
-        .papel {
-            width: 150px;
-            bottom: 178px;
-            left: 19px;
-        }
-    
-        .sustentavel-img h2 {
-            top: -250px;
-            left: 245px;
-            font-size: 21px;
-            width: 61px;
-        }
-    
-        .logo-sustevel {
-            width: 103px;
-            bottom: 262px;
-            right: 111px;
-        }
-    
-        .linhaSeparacao {
-            display: none;
-        }
-    
-        .textoSustentavel {
-            text-align: center;
-            margin-right: 5px;
-        }
-    
-        .textoSustentavel h1 {
-            font-size: 30px;
-        }
-    
-        .textoSustentavel p {
-            font-family: 'Poppins-regular';
-            width: 343px;
-            font-size: 17px;
-            margin: 25px 0;
-        }
-    
-        /* fim sustentabilidade */
+    /* sustentabilidade */
+    /* #sustentabilidade {
+        height: 740px;
+    }
+
+    .sustentabilidade {
+        height: 624px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sustentavel-img {
+        height: 206px;
+    }
+
+    .circle-um,
+    .circle-dois {
+        width: 160px;
+        height: 160px;
+    }
+
+    .circle-um {
+        top: 103px;
+        left: 83px;
+    }
+
+    .circle-dois {
+        top: 22px;
+        left: 112px;
+    }
+
+    .mao-terra {
+        width: 185px;
+        height: 249px;
+        left: 115px;
+        bottom: 256px;
+    }
+
+    .papel {
+        width: 150px;
+        bottom: 178px;
+        left: 19px;
+    }
+
+    .sustentavel-img h2 {
+        top: -250px;
+        left: 245px;
+        font-size: 21px;
+        width: 61px;
+    }
+
+    .logo-sustevel {
+        width: 103px;
+        bottom: 262px;
+        right: 111px;
+    } */
+
+    .linhaSeparacao {
+        display: none;
+    }
+
+    .textoSustentavelMobile {
+        display: grid;
+        justify-items: center;
+        padding: 39px 0 56px;
+    }
+
+    .textoSustentavelMobile h1 {
+        color: #6D5448;
+        font-family: 'Poppins-bold';
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .textoSustentavelMobile h1 .e {
+        color: #6D5448;
+        font-family: 'Young-serif';
+        font-size: 23px;
+    }
+
+    .textoSustentavelMobile h1 span {
+        color: #3C2520;
+        font-family: 'Young-serif';
+    }
+
+    .textoSustentavelMobile p {
+        font-family: 'Poppins-regular';
+        font-size: 16px;
+        text-align: center;
+        width: 76vw;
+        margin: 4vw 0;
+
+    }
+
+    .textoSustentavelMobile a button {
+        background-color: #3C2520;
+        width: 166px;
+        height: 46px;
+        border-radius: 14px;
+        color: #E3CFBC;
+        font-family: 'Young-serif';
+        font-size: 19px;
+        cursor: pointer;
+        box-shadow: 4px 4px 5px #b99b8d;
+    }
+
+    .textoSustentavelMobile a button:hover {
+        background-color: #B99B8D;
+        color: #3C2520;
+        box-shadow: 4px 4px 5px #3c2520d4;
+        transition: .3s ease-in-out;
+    }
+
+    /* fim sustentabilidade */
+
 }
 
 
 @media screen and (max-width: 400px) {
 
     /* banner */
-    .scroll-img {
+    .scroll-img,
+    .sustentabilidade {
         display: none;
+    }
+
+    .sustentavelMobile {
+        display: flex;
     }
 
 
@@ -1209,8 +1269,7 @@
     #banner {
         height: 296px;
         position: relative;
-        bottom: 45px;
-
+        margin: 0px 0 12vw;
     }
 
     .app__bg {
@@ -1228,8 +1287,9 @@
         display: flex;
         position: static;
         justify-content: center;
-        font-size: 45px;
+        font-size: 32px;
     }
+
 
     .divsaoUm,
     .divsaoDois {
@@ -1273,7 +1333,7 @@
 
     .item-mobile .content-mobile .name-mobile {
         font-family: 'Poppins-Semi';
-        font-size: 23px;
+        font-size: 21px;
         color: #522318;
     }
 
@@ -1307,7 +1367,7 @@
         align-items: center;
         padding: 0 53px;
         justify-content: space-evenly;
-        margin-bottom: 15%;
+        margin-bottom: 12%;
     }
 
     .buttons-mobile {
@@ -1383,7 +1443,7 @@
         display: grid;
         padding: 8px 0;
         justify-items: center;
-        font-size: 23px;
+        font-size: 21px;
     }
 
     .texto {
@@ -1486,8 +1546,8 @@
 
     /* fim scroll trigger */
 
-       /* sustentabilidade */
-       #sustentabilidade {
+    /* sustentabilidade */
+    /* #sustentabilidade {
         height: 740px;
     }
 
@@ -1501,6 +1561,7 @@
 
     .sustentavel-img {
         margin: 0 -22px;
+        width: 100vw;
     }
 
     .circle-um,
@@ -1546,6 +1607,17 @@
         right: 0;
         left: 231px;
         bottom: 351px;
+    }*/
+
+    .sustentavelMobile img {
+        width: 215px;
+        height: 271px;
+    }
+
+    .sustentavelMobile {
+        display: grid;
+        justify-items: center;
+
     }
 
     .linhaSeparacao {
@@ -1557,16 +1629,58 @@
         margin-right: 5px;
     }
 
-    .textoSustentavel h1 {
-        font-size: 25px;
+    .textoSustentavelMobile {
+        display: grid;
+        justify-items: center;
+        padding: 39px 0 56px;
     }
 
-    .textoSustentavel p {
-        font-family: 'Poppins-regular';
-        width: 343px;
-        font-size: 17px;
-        margin: 25px 0;
+    .textoSustentavelMobile h1 {
+        color: #6D5448;
+        font-family: 'Poppins-bold';
+        font-size: 24px;
+        text-align: center;
     }
+
+    .textoSustentavelMobile h1 .e {
+        color: #6D5448;
+        font-family: 'Young-serif';
+        font-size: 23px;
+    }
+
+    .textoSustentavelMobile h1 span {
+        color: #3C2520;
+        font-family: 'Young-serif';
+    }
+
+    .textoSustentavelMobile p {
+        font-family: 'Poppins-regular';
+        font-size: 16px;
+        text-align: center;
+        width: 76vw;
+        margin: 4vw 0;
+
+    }
+
+    .textoSustentavelMobile a button {
+        background-color: #3C2520;
+        width: 152px;
+        height: 46px;
+        border-radius: 14px;
+        color: #E3CFBC;
+        font-family: 'Young-serif';
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 4px 4px 5px #b99b8d;
+    }
+
+    .textoSustentavelMobile a button:hover {
+        background-color: #B99B8D;
+        color: #3C2520;
+        box-shadow: 4px 4px 5px #3c2520d4;
+        transition: .3s ease-in-out;
+    }
+
 
     /* fim sustentabilidade */
 

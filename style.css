@@ -2036,6 +2036,10 @@ input::-webkit-inner-spin-button {
 
 /* SUSTENTABILIDADE */
 
+.sustentavelMobile {
+  display: none;
+}
+
 #main-sus {
   margin-top: 72px;
 }
@@ -2302,7 +2306,7 @@ input::-webkit-inner-spin-button {
   /* inicio login */
 
   /* deixar display none */
-  #favoritos,
+  #favoritos, #buscar, .navDesktop,
   .button,
   .img-login, #popup, .userHeader {
     display: none;

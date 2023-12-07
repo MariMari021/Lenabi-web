@@ -81,7 +81,7 @@
                         <a href="produto.html#lancamentos-page">Lançamentos</a>
                         <a href="produto.html">Produtos</a>
                         <a href="sustentabilidade.html">Sustentabilidade</a>
-                        <a href="sustentabilidade.html">Favoritos</a>
+                        <a onclick="toggleFav()" href="#">Favoritos</a>
                         <a href="sobre-nos.html">Sobre nós</a>
                         <a id="sideUser" href="login.html">Login</a>
                         <div class="logado-mobile" id="userHeaderMobile" onclick="toggleMobile()">
@@ -102,6 +102,25 @@
 
                         </div>
                         <button class="botaoSairMobile" onclick="logout()">
+                            <p>Sair</p>
+                            <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
+                    </div>
+
+                </nav>
+            </nav>
+            <nav class="navbarFav">
+                <nav>
+                    <div id="popupMobile">
+                        <div class="popupMobileAll">
+                            <img src="img-interface/Group 20.svg" alt="">
+                            <span id="conteudoMobile"></span>
+                            <span id="emailMobile"></span>
+                            <br>
+
+                        </div>
+                        <button class="botaoSairMobile" onclick="logout()">
+                            <p>FAVORITOS FAZER NAO CONFUNDIR AAAA</p>
                             <p>Sair</p>
                             <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"></i>
                         </button>

@@ -257,26 +257,28 @@
         <div class="container-footer">
             <nav>
                 <div class="parte1">
-                    <a href="#">Produtos</a>
-                    <a href="#">Lançamentos</a>
-                    <a href="#">Pré-venda</a>
+                    <a href="index.html#but">Produtos</a>
+                    <a href="index.html#lancamentos" class="footer-desktop">Lançamentos</a>
+                    <a href="index.html#header" class="footer-desktop">Pré-venda</a>
                 </div>
                 <div class="parte2">
-                    <a href="#">Favoritos</a>
-                    <a href="#">Sustentabilidade</a>
-                    <a href="#">Sobre nós</a>
+                    <a href="#" class="footer-desktop">Favoritos</a>
+                    <a href="sustentabilidade.html">Sustentabilidade</a>
+                    <a href="sobre-nos.html">Sobre nós</a>
                 </div>
             </nav>
+            <div class="footer-branca"></div>
             <div class="redes-sociais">
-                <a href="mailto:editoralenabi@gmail.com" target="_blank"><img src="img-interface/carbon_email.svg"
-                        alt=""></a>
+                <a href="mailto:editoralenabi@gmail.com" target="_blank"><img class="email-footer"
+                        src="img-interface/carbon_email.svg" alt=""></a>
                 <a href="https://www.instagram.com/editoralenabi/?igshid=YTQwZjQ0NmI0OA%3D%3D" target="_blank"><img
-                        src="img-interface/uil_instagram.svg" alt=""></a>
+                        class="insta-footer" src="img-interface/uil_instagram.svg" alt=""></a>
                 <a href="https://x.com/LeNabiEditora?t=-ry8Op0ZSihvYuzXTeuZ8w&s=09" target="_blank"><img
-                        src="img-interface/simple-icons_x.svg" alt=""></a>
+                        class="x-footer" src="img-interface/simple-icons_x.svg" alt=""></a>
             </div>
+            <div class="footer-branco"></div>
             <div class="logo-footer">
-                <img src="img produto/lenabi 1.png" alt="">
+                <img src="img-interface/lenabi 1.png" alt="">
                 <h2>LeNabi</h2>
             </div>
         </div>
@@ -321,6 +323,45 @@
                    console.error("Erro ao buscar produtos:", error);
                });
        }
+
+       function buscarMobile() {
+            const termoDeBusca = document.getElementById("buscarMobile").value.toLowerCase();
+            const main = document.getElementById("main");
+            main.innerHTML = ""; // Limpa o conteúdo atual
+
+            // Realiza a busca nos elementos com a classe "livros" no arquivo "produto.html"
+            fetch("produto.html")
+                .then(response => response.text())
+                .then(data => {
+                    // Crie um elemento temporário para analisar o conteúdo do produto.html
+                    const tempElement = document.createElement("div");
+                    tempElement.innerHTML = data;
+
+                    // Encontra os elementos com a classe "livros" e verifica se o título contém o termo de busca
+                    const livros = tempElement.querySelectorAll(".livros");
+                    livros.forEach(livro => {
+                        const titulo = livro.querySelector("img").alt.toLowerCase();
+
+                        if (titulo.includes(termoDeBusca)) {
+                            main.appendChild(livro.cloneNode(true));
+                        }
+                    });
+
+                    // Adicione a classe "area-de-busca" a main para aplicar os estilos
+                    main.classList.add("area-de-busca");
+
+                    // Verifique se há filhos na área de busca
+                    if (main.children.length === 0) {
+                        main.innerHTML = 'Nenhum resultado encontrado.';
+                        main.style.display = "flex";
+                        main.style.alignItems = "center";
+                        main.style.backgroundColor = "#F8F1EE"; // Cor de fundo quando nenhum resultado é encontrado
+                    }
+                })
+                .catch(error => {
+                    console.error("Erro ao buscar produtos:", error);
+                });
+        }
 
 
        document.addEventListener('DOMContentLoaded', function () {

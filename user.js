@@ -2,56 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     renderizarCabecalho();
 });
 
-
-// function renderizarCabecalho() {
-//     const headerLogin = document.getElementById("userHeader");
-//     const loginButton = document.getElementById("loginButton");
-//     const nomeUsuarioElement = document.getElementById("nomeUsuario");
-//     const popup = document.getElementById("popup");
-//     const conteudoPopup = document.getElementById("conteudoPopup");
-//     const emailUsuarioPopup = document.getElementById("emailUsuario");
-
-//     // Obtenha o nome e email do usuário armazenados no localStorage
-//     const nomeUsuario = localStorage.getItem('nomeUsuario');
-//     const emailUsuario = localStorage.getItem('emailUsuario');
-
-//     // Verifica se os elementos existem antes de manipulá-los
-//     if (headerLogin && loginButton && nomeUsuarioElement && popup && conteudoPopup && emailUsuarioPopup) {
-//         if (window.innerWidth <= 975) {
-//             if (nomeUsuario) {
-//                 // Usuário logado
-//                 console.log("Usuário logado:", nomeUsuario);
-//                 headerLogin.style.display = "grid";
-//                 nomeUsuarioElement.textContent = nomeUsuario;  // Exibe o nome do usuário
-//                 loginButton.style.display = "none";
-//             } else {
-//                 // Usuário não logado
-//                 console.log("Usuário não logado");
-//                 headerLogin.style.display = "none";
-//                 loginButton.style.display = "grid";
-//             }
-
-//             // Adiciona um evento de clique ao headerLogin
-//             headerLogin.addEventListener("click", function () {
-//                 // Exibe o popup
-//                 popup.style.display = "grid";
-
-//                 // Preenche o conteúdo do popup com o nome e email do usuário
-//                 conteudoPopup.textContent = nomeUsuario;
-//                 emailUsuarioPopup.textContent = emailUsuario; // Adiciona o email do usuário ao popup
-//                 console.log("Email do usuário:", nomeUsuario);
-//                 console.log("Email do usuário:", emailUsuario);
-//             });
-//         } else {
-//             console.error("Elemento não encontrado. Verifique os IDs no HTML.");
-//         }
-//     }
-// }
-
-// // Chama a função para renderizar o cabeçalho
-// renderizarCabecalho();
-
-
 function renderizarCabecalho() {
     const headerLogin = document.getElementById("userHeader");
     const loginButton = document.getElementById("loginButton");
@@ -134,8 +84,41 @@ renderizarCabecalho();
 
 
 
-const toggleMenu = () => document.body.classList.toggle("open");
-const toggleMobile = () => document.body.classList.toggle("openMobile");
+const toggleMenu = () => {
+    // Fecha a openFav antes de abrir ou fechar o menu
+    if (document.body.classList.contains("openFav")) {
+        toggleFav();
+    }
+    
+    // Fecha o toggleMobile antes de abrir ou fechar o menu
+    if (document.body.classList.contains("openMobile")) {
+        toggleMobile();
+    }
+    
+    // Abre ou fecha o menu
+    document.body.classList.toggle("open");
+};
+
+const toggleMobile = () => {
+    // Fecha o menu antes de abrir a navbarUser
+    if (document.body.classList.contains("open")) {
+        toggleMenu();
+    }
+    // Abre ou fecha a navbarUser
+    document.body.classList.toggle("openMobile");
+};
+
+const toggleFav = () => {
+    // Fecha o menu antes de abrir a openFav
+    if (document.body.classList.contains("open")) {
+        toggleMenu();
+    }
+    // Abre ou fecha a openFav
+    document.body.classList.toggle("openFav");
+};
+
+
+
 
 
 
@@ -161,4 +144,6 @@ function mostrarOcultarPopup() {
         popupElement.style.display = "none"
     }
 }
+
+
 

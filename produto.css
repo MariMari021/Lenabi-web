@@ -192,6 +192,7 @@ body {
 .area-de-busca .livros .buttonPreco {
   background-color: #FFEFDF;
   border: 1.5px #3c252075 solid;
+  color: #3C2520;
 }
 
 .area-de-busca .livros h3 {
@@ -200,6 +201,17 @@ body {
 
 .area-de-busca .livros img {
   box-shadow: 7px 7px #E3C7BA;
+}
+
+.area-de-busca .buttonPreco::before{
+  background-color: #FFEFDF;
+}
+
+.area-de-busca .buttonPreco:hover::before {
+  opacity: 3;
+  /* Torna o elemento "hover" visível quando o botão é hover */
+  background-color: #FFEFDF;
+  /* Muda a cor de fundo quando hover */
 }
 
 
@@ -256,10 +268,10 @@ body {
   display: flex;
   width: 191px;
   height: 47px;
-  background-color: #FFEFDF;
+  background-color: #3C2520;
   position: relative;
   font-family: 'Poppins-bold';
-  color: #3C2520;
+  color: #F8F1EE;
   font-size: 20px;
   border-radius: 6px;
   align-items: center;
@@ -286,7 +298,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFEFDF;
+  background-color: #3C2520;
   transition: background-color 0.2s;
   /* Adiciona uma transição suave para a cor de fundo */
   opacity: 0;
@@ -297,7 +309,7 @@ body {
 .buttonPreco:hover::before {
   opacity: 3;
   /* Torna o elemento "hover" visível quando o botão é hover */
-  background-color: #FFEFDF;
+  background-color: #3C2520;
   /* Muda a cor de fundo quando hover */
 }
 

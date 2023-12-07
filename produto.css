@@ -256,10 +256,10 @@ body {
   display: flex;
   width: 191px;
   height: 47px;
-  background-color: #3C2520;
+  background-color: #FFEFDF;
   position: relative;
   font-family: 'Poppins-bold';
-  color: #F8F1EE;
+  color: #3C2520;
   font-size: 20px;
   border-radius: 6px;
   align-items: center;
@@ -286,7 +286,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3C2520;
+  background-color: #FFEFDF;
   transition: background-color 0.2s;
   /* Adiciona uma transição suave para a cor de fundo */
   opacity: 0;
@@ -297,7 +297,7 @@ body {
 .buttonPreco:hover::before {
   opacity: 3;
   /* Torna o elemento "hover" visível quando o botão é hover */
-  background-color: #3C2520;
+  background-color: #FFEFDF;
   /* Muda a cor de fundo quando hover */
 }
 

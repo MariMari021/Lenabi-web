@@ -2285,7 +2285,7 @@ input::-webkit-inner-spin-button {
   }
 
   .logo h2 {
-    font-size: 24.56px;
+    font-size: 20.56px;
   }
 
   .container-login {
@@ -2295,12 +2295,12 @@ input::-webkit-inner-spin-button {
 
   .container {
     padding-top: 3%;
-    margin: 0 37.7px;
+    margin: 0 30.7px;
     justify-content: space-between;
   }
 
   .logo img {
-    width: 74px;
+    width: 61px;
   }
 
   /* inicio login */
@@ -2378,7 +2378,7 @@ input::-webkit-inner-spin-button {
   .botaoMenu button {
     height: 35px;
     width: 40px;
-    font-size: 35px;
+    font-size: 31px;
     color: #3C2520;
     position: relative;
   }
@@ -2661,7 +2661,7 @@ input::-webkit-inner-spin-button {
   #header-login,
   #header,
   .container-fundo {
-    height: 90px;
+    height: 77px;
   }
 
 
@@ -2744,15 +2744,15 @@ input::-webkit-inner-spin-button {
   #header-login,
   #header,
   .container-fundo {
-    height: 112px;
+    height: 96px;
   }
 
   .logo h2 {
-    font-size: 27.56px;
+    font-size: 23.56px;
   }
 
   .logo img {
-    width: 82px;
+    width: 77px;
   }
 
 
@@ -2984,8 +2984,8 @@ input::-webkit-inner-spin-button {
   }
   .container-login,
   .container {
-    padding: 20px 0;
-    margin: 0 78.7px;
+    padding: 15px 0;
+    margin: 0px 39.7px;
     justify-content: space-between;
   }
 

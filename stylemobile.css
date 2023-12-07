@@ -31,7 +31,7 @@
     #banner {
         height: 344px;
         position: relative;
-        bottom: 45px;
+        margin: 0px 0 6%;
 
     }
 
@@ -51,7 +51,7 @@
         display: flex;
         position: static;
         justify-content: center;
-        font-size: 45px;
+        font-size: 44px;
     }
 
     .divsaoUm,
@@ -122,7 +122,7 @@
     }
 
     .item .content .des {
-        font-size: 20px;
+        font-size: 18px;
         width: 409px;
         text-align: center;
         margin-left: 67px;
@@ -166,6 +166,18 @@
         width: 100vw;
         justify-items: center;
         text-align: center;
+    }
+
+    .tarja p {
+        font-size: 27px;
+    }
+
+    .tarja p span {
+        font-size: 44px;
+    }
+
+    .texto p {
+        font-size: 18px;
     }
 
     .linha-um,
@@ -370,7 +382,7 @@
     .textoSustentavel p {
         font-family: 'Poppins-regular';
         width: 343px;
-        font-size: 17px;
+        font-size: 18px;
         margin: 25px 0;
     }
 
@@ -412,8 +424,7 @@
     #banner {
         height: 321px;
         position: relative;
-        bottom: 45px;
-
+        margin: 0px 0 7%;
     }
 
     .app__bg {
@@ -432,7 +443,7 @@
         display: flex;
         position: static;
         justify-content: center;
-        font-size: 45px;
+        font-size: 41px;
     }
 
     .divsaoUm,
@@ -478,7 +489,7 @@
 
     .item-mobile .content-mobile .name-mobile {
         font-family: 'Poppins-Semi';
-        font-size: 25px;
+        font-size: 23px;
         color: #522318;
     }
 
@@ -490,7 +501,7 @@
 
     .item-mobile .content-mobile .des-mobile {
         font-family: 'Poppins-regular';
-        font-size: 18px;
+        font-size: 17.3px;
         color: #522318;
         text-align: center;
     }
@@ -580,20 +591,20 @@
     }
 
     .texto p {
-        font-size: 17px;
+        font-size: 17.3px;
         width: 59vw;
         padding-left: 3vw;
     }
 
     .tarja p span {
-        font-size: 42px;
+        font-size: 41px;
     }
 
     .tarja p {
         display: grid;
         padding: 8px 0;
         justify-items: center;
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .texto {
@@ -777,7 +788,7 @@
     .textoSustentavel p {
         font-family: 'Poppins-regular';
         width: 343px;
-        font-size: 17px;
+        font-size: 17.3px;
         margin: 25px 0;
     }
 
@@ -786,7 +797,7 @@
 }
 
 
-@media screen and (max-width:530px) and (min-width: 400px) {
+@media screen and (max-width:530px) and (min-width: 401px) {
 
     /* main -interface inicio */
 
@@ -831,7 +842,7 @@
     #banner {
         height: 296px;
         position: relative;
-        bottom: 45px;
+        margin: 0px 0 11vw;
 
     }
 
@@ -851,7 +862,7 @@
         display: flex;
         position: static;
         justify-content: center;
-        font-size: 45px;
+        font-size: 37px;
     }
 
     .divsaoUm,
@@ -897,7 +908,7 @@
 
     .item-mobile .content-mobile .name-mobile {
         font-family: 'Poppins-Semi';
-        font-size: 25px;
+        font-size: 23px;
         color: #522318;
     }
 
@@ -909,7 +920,7 @@
 
     .item-mobile .content-mobile .des-mobile {
         font-family: 'Poppins-regular';
-        font-size: 18px;
+        font-size: 17px;
         color: #522318;
         text-align: center;
     }
@@ -1003,14 +1014,14 @@
     }
 
     .tarja p span {
-        font-size: 42px;
+        font-size: 37px;
     }
 
     .tarja p {
         display: grid;
         padding: 8px 0;
         justify-items: center;
-        font-size: 26px;
+        font-size: 23px;
     }
 
     .texto {
@@ -1436,7 +1447,7 @@
     }
 
     .tarja p span {
-        font-size: 37px;
+        font-size: 32px;
     }
 
     .tarja p {

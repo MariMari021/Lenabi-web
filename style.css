@@ -2494,6 +2494,9 @@ input::-webkit-inner-spin-button {
 
   .popupMobileAll #emailMobile{
     font-size: 15px;
+    overflow-wrap: break-word; /* Esta propriedade permite quebrar palavras */
+    max-width: 149px;
+    text-align: center;
   }
 
   .botaoSairMobile{

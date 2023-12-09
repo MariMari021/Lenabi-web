@@ -1,0 +1,454 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F1EE;
+}
+
+@font-face {
+  font-family: 'Young-serif';
+  src: url(font/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-regular';
+  src: url(font/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Semi';
+  src: url(font/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-medium';
+  src: url(font/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url(font/Poppins-Bold.ttf);
+}
+
+#conteudo {
+  margin-top: 49px;
+  height: auto;
+}
+
+.setor1Produto h1 {
+  font-family: 'Young-serif';
+  color: #3C2520;
+  font-size: 48px;
+  margin-top: 119px;
+  margin-left: 205px;
+}
+
+.setor1Produto .mobile {
+  display: none;
+}
+
+
+.topicos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 97px;
+  margin: 97px 165px;
+}
+
+
+
+.iconeFolha,
+.iconeAmazon {
+  display: grid;
+  font-family: 'Poppins-regular';
+  text-align: center;
+  justify-items: center;
+  font-size: 17.5px;
+}
+
+.iconeFolha,
+.iconeAmazon p {
+  width: 361px;
+}
+
+.cuboMarrom,
+.cubo2Marrom {
+  display: flex;
+  background-color: #3C2520;
+  width: 83px;
+  height: 83px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cuboMarrom img {
+  width: 50px;
+}
+
+.cubo2Marrom img {
+  width: 60px;
+}
+
+.linha1Produto {
+  width: 1111px;
+  height: 5px;
+  border-radius: 10px;
+  background: #4f250d;
+  margin: 0 13.3% 0%;
+}
+
+.titulo-pre {
+  margin: 2.3% 13.3%;
+  ;
+}
+
+.titulo-pre h1 {
+  font-family: 'Young-serif';
+  color: #3C2520;
+  font-size: 48px;
+}
+
+.titulo-pre p {
+  font-family: 'Poppins-regular';
+  font-size: 17.5px;
+  width: 782px;
+}
+
+.realFundo,
+.realFundo-mobile {
+  height: 506px;
+  background-color: #6D5448;
+}
+
+.realFundo-mobile {
+  display: none;
+}
+
+.realFundo2 {
+  height: 438px;
+  background-color: #6D5448;
+}
+
+.fundoPre,
+.fundoPre-mobile {
+  margin: 0 60px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #6D5448;
+}
+
+
+.livros,
+.livros-mobile {
+  margin: 5.5% 0;
+  padding: 2% 0;
+  border-radius: 14px;
+  display: grid;
+  width: 236px;
+  height: 350px;
+  background-color: #FFEFDF;
+  justify-items: center;
+  text-align: center;
+}
+
+/* Estilo para a área de busca */
+.area-de-busca {
+  padding-top: 21px;
+  display: flex;
+  width: 80%;
+  margin: 0 10%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Poppins-Semi';
+  color: #9a594b;
+  border-radius: 17px;
+  min-height: 470px;
+}
+
+.area-de-busca .livros2 {
+  margin: 3% 0;
+  margin-bottom: 5%;
+}
+
+.area-de-busca .livros {
+  margin: 3% 3%;
+  background-color: #3C2520;
+  color: #FFEFDF;
+}
+
+.area-de-busca .livros h2 {
+  color: #FFEFDF;
+}
+
+.area-de-busca .livros .buttonPreco {
+  background-color: #FFEFDF;
+  border: 1.5px #3c252075 solid;
+  color: #3C2520;
+}
+
+.area-de-busca .livros h3 {
+  color: #3C2520;
+}
+
+.area-de-busca .livros img {
+  box-shadow: 7px 7px #E3C7BA;
+}
+
+.area-de-busca .buttonPreco::before{
+  background-color: #FFEFDF;
+}
+
+.area-de-busca .buttonPreco:hover::before {
+  opacity: 3;
+  /* Torna o elemento "hover" visível quando o botão é hover */
+  background-color: #FFEFDF;
+  /* Muda a cor de fundo quando hover */
+}
+
+
+
+.livros2 {
+  margin: 0;
+}
+
+.livros img,
+.livros-mobile img {
+  margin: 0 8.5%;
+  border-radius: 3px;
+  height: auto;
+  width: 148px;
+  box-shadow: 7px 7px #B99B8D;
+}
+
+.livros h2, .livros-mobile h2{
+  font-family: 'Young-serif';
+  font-size: 23px;
+  color: #3C2520;
+}
+
+.livros p, .livros-mobile p {
+  font-family: 'Poppins-regular';
+  font-size: 15px;
+  padding-bottom: 3.5%;
+}
+
+.buttonPreco {
+  left: 43px;
+  bottom: 30px;
+}
+
+.preco2 {
+  bottom: 40px;
+}
+
+.buttonPreco h3 {
+  padding-left: 7%;
+  font-size: 22px;
+}
+
+.l-dois {
+  margin: 3% 13.3%;
+}
+
+.l-tres {
+  margin: 4.7% 13.3%;
+}
+
+
+.buttonPreco {
+  display: flex;
+  width: 191px;
+  height: 47px;
+  background-color: #3C2520;
+  position: relative;
+  font-family: 'Poppins-bold';
+  color: #F8F1EE;
+  font-size: 20px;
+  border-radius: 6px;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.buttonPreco h3 {
+  padding-left: 7%;
+}
+
+.buttonPreco:hover {
+  transform: translateY(-10px);
+}
+
+.buttonPreco::before {
+  content: "Ver Mais";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3C2520;
+  transition: background-color 0.2s;
+  /* Adiciona uma transição suave para a cor de fundo */
+  opacity: 0;
+  pointer-events: none;
+  /* Evita que o elemento "hover" seja clicável */
+}
+
+.buttonPreco:hover::before {
+  opacity: 3;
+  /* Torna o elemento "hover" visível quando o botão é hover */
+  background-color: #3C2520;
+  /* Muda a cor de fundo quando hover */
+}
+
+.button a {
+  display: flex;
+}
+
+@media screen and (max-width: 400px) {
+
+  .setor1Produto h1 {
+    display: none;
+  }
+
+  .setor1Produto .mobile {
+    display: grid;
+    font-size: 38px;
+    margin-top: 0px;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .setor1Produto .mobile span {
+    font-family: 'Poppins-bold';
+    font-size: 36px;
+  }
+
+  .topicos {
+    display: flex;
+    margin: 44px 0;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cuboMarrom,
+  .cubo2Marrom {
+    width: 14vw;
+    height: 14vw;
+  }
+
+  .cuboMarrom img {
+    width: 9vw;
+  }
+
+  .cubo2Marrom img {
+    width: 10vw;
+  }
+
+  .iconeFolha p,
+  .iconeAmazon p {
+    width: 80vw;
+    text-align: center;
+    font-size: 14.5px;
+  }
+
+  .iconeFolha p {
+    margin-bottom: 20px;
+  }
+
+  .linha1Produto {
+    width: 80vw;
+    margin: 0 0px 44px 37px;
+  }
+
+  .titulo-pre h1 {
+    font-family: 'Young-serif';
+    color: #3C2520;
+    font-size: 36px;
+    text-align: center;
+}
+
+.titulo-pre {
+  margin: 2.3% 0;
+  display: grid;
+    justify-content: center;
+}
+
+.titulo-pre p {
+  font-family: 'Poppins-regular';
+  font-size: 14.5px;
+  width: 80vw;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+  .realFundo {
+    display: none;
+  }
+
+  .realFundo-mobile {
+    display: flex;
+  }
+
+  .fundoPre-mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0 85px;
+  }
+
+  .livros-mobile {
+    display: none;
+    height: 329px;
+    width: 55vw;
+  }
+
+  .livros-mobile.active {
+    display: block;
+  }
+
+  .botao {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 228px;
+    width: 80vw;
+    right: 44px;
+  }
+
+  .botao button {
+    background: transparent;
+    width: 7vw;
+    height: 10vw;
+  }
+
+  .botao button i {
+    font-size: 30px;
+    color: white;
+  }
+
+  #paradaUm {
+    display: none;
+  }
+
+  #lancamentos-page,
+  #produtos-page {
+    display: none;
+  }
+}
+
+

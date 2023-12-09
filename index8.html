@@ -67,7 +67,7 @@
                     </button>
                 </div>
             </div>
-            <nav class="navbar" >
+            <nav class="navbar">
                 <div class="buscarMobile">
                     <input type="text" spellcheck="false" class="buscarMobile" id="buscarMobile"
                         placeholder="Buscar livro" oninput="buscarMobile()">
@@ -96,17 +96,18 @@
                             <span id="conteudoMobile"></span>
                             <span id="emailMobile"></span>
                             <br>
-                            
+
                         </div>
-                       <button class="botaoSairMobile" onclick="logout()"> <p>Sair</p>
-                            <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"
-                                ></i></button>
+                        <button class="botaoSairMobile" onclick="logout()">
+                            <p>Sair</p>
+                            <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
                     </div>
-                    
+
                 </nav>
             </nav>
         </div>
-       
+
 
         </div>
         </div>
@@ -160,19 +161,21 @@
                                 <p class="espec">Português-BR</p>
                             </div>
                             <div class="image-card">
-                                <button class="produtinhos" data-produto-nome="Os Irmãos Hawthorne" data-preco="68.90">
-                                    <img class="icon-coracao" src="img produto/coracao icone.png" alt="produto icone" id="coracao-vazio-2">
-                                    <img class="icon-coracaoP" src="img produto/cora-pintado.png" alt="produto icone" id="coracao-pintado-2" style="display: none;">
+                                <button class="produtinhos" data-produto-nome="A Cabana" data-preco="43.99">
+                                    <img class="icon-coracao" src="img produto/coracao icone.png" alt="produto icone"
+                                        id="coracao-vazio-2">
+                                    <img class="icon-coracaoP" src="img produto/cora-pintado.png" alt="produto icone"
+                                        id="coracao-pintado-2" style="display: none;">
                                 </button>
-                                <p class="espec-coracao" id="contador-coracao-2" data-ativo="false"
-                                    data-valor-inicial="202">
-                                    202</p>
+                                <p class="espec-coracao" id="contador-coracao-Produto1" data-ativo="false"
+                                    data-valor-inicial="202">202</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
+        </div>
         </div>
         </section>
         <div class="compre">
@@ -286,45 +289,45 @@
     <script>
         //barra de pesquisa
         function buscarProduto() {
-           const termoDeBusca = document.getElementById("buscar").value.toLowerCase();
-           const main = document.getElementById("main");
-           main.innerHTML = ""; // Limpa o conteúdo atual
+            const termoDeBusca = document.getElementById("buscar").value.toLowerCase();
+            const main = document.getElementById("main");
+            main.innerHTML = ""; // Limpa o conteúdo atual
 
-           // Realiza a busca nos elementos com a classe "livros" no arquivo "produto.html"
-           fetch("produto.html")
-               .then(response => response.text())
-               .then(data => {
-                   // Crie um elemento temporário para analisar o conteúdo do produto.html
-                   const tempElement = document.createElement("div");
-                   tempElement.innerHTML = data;
+            // Realiza a busca nos elementos com a classe "livros" no arquivo "produto.html"
+            fetch("produto.html")
+                .then(response => response.text())
+                .then(data => {
+                    // Crie um elemento temporário para analisar o conteúdo do produto.html
+                    const tempElement = document.createElement("div");
+                    tempElement.innerHTML = data;
 
-                   // Encontra os elementos com a classe "livros" e verifica se o título contém o termo de busca
-                   const livros = tempElement.querySelectorAll(".livros");
-                   livros.forEach(livro => {
-                       const titulo = livro.querySelector("img").alt.toLowerCase();
+                    // Encontra os elementos com a classe "livros" e verifica se o título contém o termo de busca
+                    const livros = tempElement.querySelectorAll(".livros");
+                    livros.forEach(livro => {
+                        const titulo = livro.querySelector("img").alt.toLowerCase();
 
-                       if (titulo.includes(termoDeBusca)) {
-                           main.appendChild(livro.cloneNode(true));
-                       }
-                   });
+                        if (titulo.includes(termoDeBusca)) {
+                            main.appendChild(livro.cloneNode(true));
+                        }
+                    });
 
-                   // Adicione a classe "area-de-busca" a main para aplicar os estilos
-                   main.classList.add("area-de-busca");
+                    // Adicione a classe "area-de-busca" a main para aplicar os estilos
+                    main.classList.add("area-de-busca");
 
-                   // Verifique se há filhos na área de busca
-                   if (main.children.length === 0) {
-                       main.innerHTML = 'Nenhum resultado encontrado.';
-                       main.style.display = "flex";
-                       main.style.alignItems = "center";
-                       main.style.backgroundColor = "#F8F1EE"; // Cor de fundo quando nenhum resultado é encontrado
-                   }
-               })
-               .catch(error => {
-                   console.error("Erro ao buscar produtos:", error);
-               });
-       }
+                    // Verifique se há filhos na área de busca
+                    if (main.children.length === 0) {
+                        main.innerHTML = 'Nenhum resultado encontrado.';
+                        main.style.display = "flex";
+                        main.style.alignItems = "center";
+                        main.style.backgroundColor = "#F8F1EE"; // Cor de fundo quando nenhum resultado é encontrado
+                    }
+                })
+                .catch(error => {
+                    console.error("Erro ao buscar produtos:", error);
+                });
+        }
 
-       function buscarMobile() {
+        function buscarMobile() {
             const termoDeBusca = document.getElementById("buscarMobile").value.toLowerCase();
             const main = document.getElementById("main");
             main.innerHTML = ""; // Limpa o conteúdo atual
@@ -364,10 +367,10 @@
         }
 
 
-       document.addEventListener('DOMContentLoaded', function () {
-           renderizarCabecalho();
-       });
-   </script>
+        document.addEventListener('DOMContentLoaded', function () {
+            renderizarCabecalho();
+        });
+    </script>
 
     <script src="user.js"></script>
 </body>

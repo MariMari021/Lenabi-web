@@ -40,6 +40,121 @@ body {
 }
 
 
+/* favoritos */
+#carrinho-itens {
+  position: absolute;
+  left: 72%;
+  top: 14.8%;
+  height: 250px;
+  width: 400px;
+  padding-top: 10px;
+  background-color: #3C2520;
+  padding: 18px 30px;
+  border-radius: 15px;
+  transition: 1s linear;
+  animation: descer 0.6s;
+  box-shadow: 2px 5px 4px #3c25208d;
+  top: 87px;
+}
+
+.remove {
+  background-color: #6D5448;
+  padding: 2px 14px;
+  border-radius: 12px;
+  color: #FFEFDF;
+  margin: 5px 5px;
+  font-family: 'Poppins-regular';
+  font-weight: 600;
+}
+
+.add {
+  background-color: #6D5448;
+  padding: 2px 14px;
+  border-radius: 12px;
+  margin: 5px 5px;
+  color: #FFEFDF;
+  font-family: 'Poppins-regular';
+  font-weight: 600;
+}
+
+.car {
+  padding: 10px 116px;
+  border-radius: 18px;
+  color: #fff;
+  font-family: 'Poppins-regular';
+  background-color: #710505;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.car:hover {
+  background-color: #ca0202;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.preco-total {
+  font-family: 'Poppins-Semi';
+  color: #fff;
+  width: 10px;
+  font-size: 22px;
+}
+
+#preco-total {
+  margin-top: 5px;
+  display: flex;
+  font-family: 'Poppins-regular';
+  color: #fff;
+  font-weight: 200;
+}
+
+@keyframes descer {
+  0% {
+      opacity: 25%;
+      transform: translateY(-30px);
+  }
+
+  100% {
+      opacity: 100%;
+      transform: translateY(0);
+  }
+}
+
+#favoritos {
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+}
+
+.fa-heart:hover {
+  font-weight: 900;
+}
+
+li::marker {
+  font-family: 'Poppins-regular';
+  color: white;
+}
+
+li span {
+  font-family: 'Poppins-regular';
+  color: white;
+}
+
+.item {
+  width: 289px;
+}
+
+
+#cont-favoritos {
+  text-align: center;
+  font-family: 'Poppins-regular';
+  color: #3C2520;
+}
+
+
+/* favoritos */
+
+
 /* INICIO HEADER */
 
 .navbarUser, .navbarFav {
@@ -608,6 +723,10 @@ input::placeholder {
 .card.next--card {
   --card-translateX-offset: calc(var(--card-width) * 1.1);
   --card-rotation-offset: -25deg;
+}
+
+.card{
+  cursor: pointer;
 }
 
 .card.previous--card,

@@ -12,7 +12,287 @@ btn.onmousemove = function (e) {
 
 //FIMM BOTAO
 
-//BANNER
+
+
+// BANNER
+
+// console.clear();
+
+// const { gsap, imagesLoaded } = window;
+
+// const buttons = {
+//   prev: document.querySelector(".btn--left"),
+//   next: document.querySelector(".btn--right"),
+// };
+// const cardsContainerEl = document.querySelector(".cards__wrapper");
+// const appBgContainerEl = document.querySelector(".app__bg");
+
+// const cardInfosContainerEl = document.querySelector(".info__wrapper");
+
+// const currentCardEl = cardsContainerEl.querySelector(".current--card");
+// const nextCardEl = cardsContainerEl.querySelector(".next--card");
+// const previousCardEl = cardsContainerEl.querySelector(".previous--card");
+
+// buttons.next.addEventListener("click", () => swapCards("right"));
+
+// buttons.prev.addEventListener("click", () => swapCards("left"));
+
+// currentCardEl.addEventListener("click", () => navigateToPage("flipbook-VOL1.html"));
+// nextCardEl.addEventListener("click", () => navigateToPage("flipbook-VOL2.html"));
+// previousCardEl.addEventListener("click", () => navigateToPage("flipbook-VOL3.html"));
+
+// function navigateToPage(page) {
+//   if (window.innerWidth >= 975) {
+//     window.location.href = page;
+//   }
+// }
+
+// function swapCards(direction) {
+// 	const currentCardEl = cardsContainerEl.querySelector(".current--card");
+// 	const previousCardEl = cardsContainerEl.querySelector(".previous--card");
+// 	const nextCardEl = cardsContainerEl.querySelector(".next--card");
+
+// 	const currentBgImageEl = appBgContainerEl.querySelector(".bg-current");
+// 	const previousBgImageEl = appBgContainerEl.querySelector(".bg-previous");
+// 	const nextBgImageEl = appBgContainerEl.querySelector(".bg-next");
+
+// 	changeInfo(direction);
+// 	swapCardsClass();
+
+// 	removeCardEvents(currentCardEl);
+
+// 	function swapCardsClass() {
+// 		currentCardEl.classList.remove("current--card");
+// 		previousCardEl.classList.remove("previous--card");
+// 		nextCardEl.classList.remove("next--card");
+
+// 		currentBgImageEl.classList.remove("bg-current");
+// 		previousBgImageEl.classList.remove("bg-previous");
+// 		nextBgImageEl.classList.remove("bg-next");
+
+// 		currentCardEl.style.zIndex = "50";
+// 		currentBgImageEl.style.zIndex = "-2";
+
+// 		if (direction === "right") {
+// 			previousCardEl.style.zIndex = "20";
+// 			nextCardEl.style.zIndex = "30";
+
+// 			nextBgImageEl.style.zIndex = "-1";
+
+// 			currentCardEl.classList.add("previous--card");
+// 			previousCardEl.classList.add("next--card");
+// 			nextCardEl.classList.add("current--card");
+
+// 			currentBgImageEl.classList.add("bg-previous");
+// 			previousBgImageEl.classList.add("bg-next");
+// 			nextBgImageEl.classList.add("bg-current");
+// 		} else if (direction === "left") {
+// 			previousCardEl.style.zIndex = "30";
+// 			nextCardEl.style.zIndex = "20";
+
+// 			previousBgImageEl.style.zIndex = "-1";
+
+// 			currentCardEl.classList.add("next--card");
+// 			previousCardEl.classList.add("current--card");
+// 			nextCardEl.classList.add("previous--card");
+
+// 			currentBgImageEl.classList.add("bg-next");
+// 			previousBgImageEl.classList.add("bg-current");
+// 			nextBgImageEl.classList.add("bg-previous");
+// 		}
+// 	}
+// }
+
+// function changeInfo(direction) {
+// 	let currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
+// 	let previousInfoEl = cardInfosContainerEl.querySelector(".previous--info");
+// 	let nextInfoEl = cardInfosContainerEl.querySelector(".next--info");
+
+// 	gsap.timeline()
+// 		.to([buttons.prev, buttons.next], {
+// 			duration: 0.2,
+// 			opacity: 0.5,
+// 			pointerEvents: "none",
+// 		})
+// 		.to(
+// 			currentInfoEl.querySelectorAll(".text"),
+// 			{
+// 				duration: 0.4,
+// 				stagger: 0.1,
+// 				translateY: "-120px",
+// 				opacity: 0,
+// 			},
+// 			"-="
+// 		)
+// 		.call(() => {
+// 			swapInfosClass(direction);
+// 		})
+// 		.call(() => initCardEvents())
+// 		.fromTo(
+// 			direction === "right"
+// 				? nextInfoEl.querySelectorAll(".text")
+// 				: previousInfoEl.querySelectorAll(".text"),
+// 			{
+// 				opacity: 0,
+// 				translateY: "40px",
+// 			},
+// 			{
+// 				duration: 0.4,
+// 				stagger: 0.1,
+// 				translateY: "0px",
+// 				opacity: 1,
+// 			}
+// 		)
+// 		.to([buttons.prev, buttons.next], {
+// 			duration: 0.2,
+// 			opacity: 1,
+// 			pointerEvents: "all",
+// 		});
+
+// 	function swapInfosClass() {
+// 		currentInfoEl.classList.remove("current--info");
+// 		previousInfoEl.classList.remove("previous--info");
+// 		nextInfoEl.classList.remove("next--info");
+
+// 		if (direction === "right") {
+// 			currentInfoEl.classList.add("previous--info");
+// 			nextInfoEl.classList.add("current--info");
+// 			previousInfoEl.classList.add("next--info");
+// 		} else if (direction === "left") {
+// 			currentInfoEl.classList.add("next--info");
+// 			nextInfoEl.classList.add("previous--info");
+// 			previousInfoEl.classList.add("current--info");
+// 		}
+// 	}
+// }
+
+// function updateCard(e) {
+// 	const card = e.currentTarget;
+// 	const box = card.getBoundingClientRect();
+// 	const centerPosition = {
+// 		x: box.left + box.width / 2,
+// 		y: box.top + box.height / 2,
+// 	};
+// 	let angle = Math.atan2(e.pageX - centerPosition.x, 0) * (35 / Math.PI);
+// 	gsap.set(card, {
+// 		"--current-card-rotation-offset": `${angle}deg`,
+// 	});
+// 	const currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
+// 	gsap.set(currentInfoEl, {
+// 		rotateY: `${angle}deg`,
+// 	});
+// }
+
+// function resetCardTransforms(e) {
+// 	const card = e.currentTarget;
+// 	const currentInfoEl = cardInfosContainerEl.querySelector(".current--info");
+// 	gsap.set(card, {
+// 		"--current-card-rotation-offset": 0,
+// 	});
+// 	gsap.set(currentInfoEl, {
+// 		rotateY: 0,
+// 	});
+// }
+
+// function initCardEvents() {
+// 	const currentCardEl = cardsContainerEl.querySelector(".current--card");
+// 	currentCardEl.addEventListener("pointermove", updateCard);
+// 	currentCardEl.addEventListener("pointerout", (e) => {
+// 		resetCardTransforms(e);
+// 	});
+// }
+
+// initCardEvents();
+
+// function removeCardEvents(card) {
+// 	card.removeEventListener("pointermove", updateCard);
+// }
+
+// function init() {
+
+// 	let tl = gsap.timeline();
+
+// 	tl.to(cardsContainerEl.children, {
+// 		delay: 0.15,
+// 		duration: 0.5,
+// 		stagger: {
+// 			ease: "power4.inOut",
+// 			from: "right",
+// 			amount: 0.1,
+// 		},
+// 		"--card-translateY-offset": "0%",
+// 	})
+// 		.to(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
+// 			delay: 0.5,
+// 			duration: 0.4,
+// 			stagger: 0.1,
+// 			opacity: 1,
+// 			translateY: 0,
+// 		})
+// 		.to(
+// 			[buttons.prev, buttons.next],
+// 			{
+// 				duration: 0.4,
+// 				opacity: 1,
+// 				pointerEvents: "all",
+// 			},
+// 			"-=0.4"
+// 		);
+// }
+
+// const waitForImages = () => {
+// 	const images = [...document.querySelectorAll("img")];
+// 	const totalImages = images.length;
+// 	let loadedImages = 0;
+// 	const loaderEl = document.querySelector(".loader span");
+
+// 	gsap.set(cardsContainerEl.children, {
+// 		"--card-translateY-offset": "100vh",
+// 	});
+// 	gsap.set(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
+// 		translateY: "40px",
+// 		opacity: 0,
+// 	});
+// 	gsap.set([buttons.prev, buttons.next], {
+// 		pointerEvents: "none",
+// 		opacity: "0",
+// 	});
+
+// 	images.forEach((image) => {
+// 		imagesLoaded(image, (instance) => {
+// 			if (instance.isComplete) {
+// 				loadedImages++;
+// 				let loadProgress = loadedImages / totalImages;
+
+// 				gsap.to(loaderEl, {
+// 					duration: 1,
+// 					scaleX: loadProgress,
+// 					backgroundColor: `hsl(${loadProgress * 120}, 100%, 50%`,
+// 				});
+
+// 				if (totalImages == loadedImages) {
+// 					gsap.timeline()
+// 						.to(".loading__wrapper", {
+// 							duration: 0.8,
+// 							opacity: 0,
+// 							pointerEvents: "none",
+// 						})
+// 						.call(() => init());
+// 				}
+// 			}
+// 		});
+// 	});
+// };
+
+// waitForImages();
+
+
+
+// FIM BANNER
+
+
+// teste banner
+
 console.clear();
 
 const { gsap, imagesLoaded } = window;
@@ -26,9 +306,35 @@ const appBgContainerEl = document.querySelector(".app__bg");
 
 const cardInfosContainerEl = document.querySelector(".info__wrapper");
 
+const currentCardEl = cardsContainerEl.querySelector(".current--card");
+const nextCardEl = cardsContainerEl.querySelector(".next--card");
+const previousCardEl = cardsContainerEl.querySelector(".previous--card");
+
 buttons.next.addEventListener("click", () => swapCards("right"));
 
 buttons.prev.addEventListener("click", () => swapCards("left"));
+
+currentCardEl.addEventListener("click", () => handleCardClick("flipbook-VOL1.html", "vol1.pdf"));
+nextCardEl.addEventListener("click", () => handleCardClick("flipbook-VOL2.html", "vol2.pdf"));
+previousCardEl.addEventListener("click", () => handleCardClick("flipbook-VOL3.html", "vol3.pdf"));
+
+function handleCardClick(page, pdf) {
+	if (window.innerWidth >= 975) {
+		window.location.href = page;
+	} if (window.innerWidth <= 975){
+		const downloadConfirmation = confirm("Deseja baixar a amostra grátis do livro?");
+		if (downloadConfirmation) {
+			// Cria um elemento de link temporário para baixar o arquivo
+			const link = document.createElement("a");
+			link.href = pdf;
+			link.download = pdf; // Define o nome do arquivo para download
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+		}
+	}
+}
+
 
 function swapCards(direction) {
 	const currentCardEl = cardsContainerEl.querySelector(".current--card");
@@ -269,7 +575,12 @@ const waitForImages = () => {
 
 waitForImages();
 
-//FIM BANNER
+
+
+
+
+
+// fim teste banner
 
 // LANÇAMENTOS 
 
@@ -287,41 +598,41 @@ document.getElementById('prev').onclick = function () {
 
 //LANÇAMENTOS MOBILE
 let mobileIndex = 0;
-  const slides = document.querySelectorAll('.content-mobile');
-  const slideContainer = document.getElementById('slide-mobile');
+const slides = document.querySelectorAll('.content-mobile');
+const slideContainer = document.getElementById('slide-mobile');
 
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      if (i === index) {
-        slide.style.opacity = 1;
-      } else {
-        slide.style.opacity = 0;
-      }
-    });
-  }
+function showSlide(index) {
+	slides.forEach((slide, i) => {
+		if (i === index) {
+			slide.style.opacity = 1;
+		} else {
+			slide.style.opacity = 0;
+		}
+	});
+}
 
-  function nextSlide() {
-    const totalSlides = slides.length;
-    mobileIndex = (mobileIndex + 1) % totalSlides;
-    showSlide(mobileIndex);
-    updateTransform();
-  }
+function nextSlide() {
+	const totalSlides = slides.length;
+	mobileIndex = (mobileIndex + 1) % totalSlides;
+	showSlide(mobileIndex);
+	updateTransform();
+}
 
-  function prevSlide() {
-    const totalSlides = slides.length;
-    mobileIndex = (mobileIndex - 1 + totalSlides) % totalSlides;
-    showSlide(mobileIndex);
-    updateTransform();
-  }
+function prevSlide() {
+	const totalSlides = slides.length;
+	mobileIndex = (mobileIndex - 1 + totalSlides) % totalSlides;
+	showSlide(mobileIndex);
+	updateTransform();
+}
 
-  function updateTransform() {
-    const slideWidth = 100 / slides.length;
-    const transformValue = -mobileIndex * slideWidth;
-    slideContainer.style.transform = `translateX(${transformValue}%)`;
-  }
+function updateTransform() {
+	const slideWidth = 100 / slides.length;
+	const transformValue = -mobileIndex * slideWidth;
+	slideContainer.style.transform = `translateX(${transformValue}%)`;
+}
 
-  // Exibir o primeiro slide ao carregar a página
-  showSlide(mobileIndex);
+// Exibir o primeiro slide ao carregar a página
+showSlide(mobileIndex);
 //FIM LANÇAMENTOS MOBILE
 
 
@@ -331,28 +642,28 @@ AOS.init();
 
 // ScrollTrigger
 const trocas = document.getElementById('trocas');
-        const trocaList = trocas.querySelectorAll('.troca');
-        let currentIndex = 0;
+const trocaList = trocas.querySelectorAll('.troca');
+let currentIndex = 0;
 
-        window.addEventListener('wheel', (event) => {
-            if (event.deltaY > 0) {
-                currentIndex = (currentIndex + 1) % trocaList.length;
-            } else {
-                currentIndex = (currentIndex - 1 + trocaList.length) % trocaList.length;
-            }
+window.addEventListener('wheel', (event) => {
+	if (event.deltaY > 0) {
+		currentIndex = (currentIndex + 1) % trocaList.length;
+	} else {
+		currentIndex = (currentIndex - 1 + trocaList.length) % trocaList.length;
+	}
 
-            updateVisibleTroca();
-        });
+	updateVisibleTroca();
+});
 
-        function updateVisibleTroca() {
-            trocaList.forEach((troca, index) => {
-                if (index === currentIndex) {
-                    troca.classList.add('active');
-                } else {
-                    troca.classList.remove('active');
-                }
-            });
-        }
+function updateVisibleTroca() {
+	trocaList.forEach((troca, index) => {
+		if (index === currentIndex) {
+			troca.classList.add('active');
+		} else {
+			troca.classList.remove('active');
+		}
+	});
+}
 //fim ScrollTrigger
 
 

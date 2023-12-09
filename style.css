@@ -2876,6 +2876,7 @@ input::-webkit-inner-spin-button {
     height: 4.3px;
     margin: 32px 10vw;
     width: 80vw;
+    border-radius: 10px;
   }
 
   .saibaProjeto {

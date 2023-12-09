@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a2288264db.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img-interface/lenabi 1.png" type="image/x-icon">
     <link rel="stylesheet" href="produto.css">
@@ -69,11 +70,12 @@
                 </div>
                 <nav>
                     <div class=" botoes-login">
+                        <a href="index.html">Home</a>
                         <a href="produto.html#pre-venda">Pré-Venda</a>
                         <a href="produto.html#lancamentos-page">Lançamentos</a>
                         <a href="produto.html">Produtos</a>
                         <a href="sustentabilidade.html">Sustentabilidade</a>
-                        <a href="sustentabilidade.html">Favoritos</a>
+                        <a onclick="toggleFav()" href="#">Favoritos</a>
                         <a href="sobre-nos.html">Sobre nós</a>
                         <a id="sideUser" href="login.html">Login</a>
                         <div class="logado-mobile" id="userHeaderMobile" onclick="toggleMobile()">
@@ -94,6 +96,25 @@
 
                         </div>
                         <button class="botaoSairMobile" onclick="logout()">
+                            <p>Sair</p>
+                            <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
+                    </div>
+
+                </nav>
+            </nav>
+            <nav class="navbarFav">
+                <nav>
+                    <div id="popupMobile">
+                        <div class="popupMobileAll">
+                            <img src="img-interface/Group 20.svg" alt="">
+                            <span id="conteudoMobile"></span>
+                            <span id="emailMobile"></span>
+                            <br>
+
+                        </div>
+                        <button class="botaoSairMobile" onclick="logout()">
+                            <p>FAVORITOS FAZER NAO CONFUNDIR AAAA</p>
                             <p>Sair</p>
                             <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"></i>
                         </button>
@@ -122,7 +143,9 @@
         <div class="center-sus">
             <div class="stack-area-sus">
                 <div class="left-sus">
-                    <div class="titulo-sus">Sustentável!</div>
+                    <div class="titulo-sus">
+                        <h1>Sustentável!</h1>
+                    </div>
                     <div class="sub-titulo-sus">
                         Nosso site é dedicado à sustentabilidade em livros. Somos uma editora comprometida em oferecer
                         livros com folhas recicláveis, promovendo uma leitura consciente em harmonia com o meio
@@ -152,24 +175,31 @@
             </div>
             <div class="linha-sus"></div>
         </div>
+        <div class="mobile-sus">
+            <h1>Sustentável!</h1>
+            <p>
+                Nosso site é dedicado à sustentabilidade em livros. Somos uma editora comprometida em oferecer livros com folhas recicláveis, promovendo uma leitura consciente em harmonia com o meio ambiente.
+            </p>
+            <div class="sus-linha"></div>
+        </div>
         <div class="saibaProjeto">
             <div class="conteudo-sus">
                 <h1>saiba mais do <span>projeto!</span></h1>
                 <div class="biodegradaveis">
                     <img src="img-interface/biodegradaveis.png" alt="vaso com planta">
                     <div class="biodegradavel-texto">
-                        <h2>Nossas folhas biodegradáveis!</h2>
-                        <p>Cada página é uma história eco-friendly. Nossos livros são impressos em folhas
-                            biodegradáveis, unindo leitura apaixonante e cuidado com o meio ambiente. Descubra a
-                            magia das palavras enquanto faz a diferença para o planeta. </p>
+                        <h2><span class="sumir">Nossas</span> <span class="maior">f</span>olhas biodegradáveis!</h2>
+                        <p> <span class="sumir">    </span> Nossos livros são impressos em folhas
+                            biodegradáveis, unindo leitura apaixonante e cuidado com o meio ambiente. <span class="sumir">Descubra a
+                            magia das palavras enquanto faz a diferença para o planeta.</span>  </p>
                     </div>
                 </div>
                 <div class="planeta">
+                    <img class="image-mobile" src="img-interface/planeta.png" alt="folha">
                     <div class="planeta-texto">
                         <h2>Ajude o planeta conosco!</h2>
-                        <p>Junte-se a nossa missão de promover a sustentabilidade e conscientização ambiental
-                            através de nossas publicações. Escolhendo nossos materiais, você ajuda a construir um
-                            futuro mais verde e saudável. Faça parte desta jornada sustentável! </p>
+                        <p>Junte-se a nossa missão de promover a <span class="sumir">sustentabilidade e</span> conscientização ambiental através de nossas publicações. <span class="sumir">Escolhendo nossos materiais, você </span> <span class="maior">a</span>juda a construir um
+                        futuro mais verde e saudável. <span class="sumir">Faça parte desta jornada sustentável! </span> </p>
                     </div>
                     <img src="img-interface/planeta.png" alt="folha">
                 </div>

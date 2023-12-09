@@ -2091,6 +2091,10 @@ input::-webkit-inner-spin-button {
   margin-top: 72px;
 }
 
+.mobile-sus {
+  display: none;
+}
+
 .center-sus {
   width: 100%;
   height: fit-content;
@@ -2189,11 +2193,13 @@ input::-webkit-inner-spin-button {
 }
 
 .titulo-sus {
-  width: 420px;
-  font-size: 54px;
   font-family: 'Young-serif';
   color: #3C2520;
-  font-weight: 500;
+  margin-right: 8vw;
+}
+
+.titulo-sus h1 {
+  font-size: 48px;
 }
 
 .sub-titulo-sus {
@@ -2245,6 +2251,10 @@ input::-webkit-inner-spin-button {
 .planeta img {
   width: 263px;
   height: auto;
+}
+
+.planeta .image-mobile {
+  display: none;
 }
 
 .biodegradaveis,
@@ -2319,13 +2329,6 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 530px) {
 
-  /* main -interface inicio */
-
-
-
-
-
-  /* main interface fim */
 
   .usuario-logado {
     display: none;
@@ -2840,6 +2843,120 @@ input::-webkit-inner-spin-button {
     font-size: 19px;
     top: 16px;
   }
+
+   /* sustentabilidade */
+   #main-sus {
+    margin-top: 0;
+  }
+
+  .center-sus {
+    display: none;
+  }
+
+  .mobile-sus {
+    display: block;
+    text-align: center;
+    margin-top: 45px;
+  }
+
+  .mobile-sus h1 {
+    font-family: 'Young-serif';
+    color: #3C2520;
+    font-size: 36px;
+  }
+
+  .mobile-sus p {
+    font-family: 'Poppins-regular';
+    font-size: 14.5px;
+    margin: 20px 45px;
+  }
+
+  .mobile-sus .sus-linha {
+    background: #522318;
+    height: 4.3px;
+    margin: 32px 10vw;
+    width: 80vw;
+  }
+
+  .saibaProjeto {
+    padding: 0 0;
+    margin-top: 43px;
+    margin-bottom: 105px;
+  }
+
+  .conteudo-sus h1 {
+    font-size: 25px;
+    width: 40vw;
+    margin-bottom: 26px;
+    margin-top: 26px;
+  }
+
+  .biodegradaveis,
+  .planeta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .planeta {
+    margin-top: 30px;
+  }
+
+  .biodegradavel-texto,
+  .biodegradaveis p,
+  .planeta-texto,
+  .planeta p {
+    padding: 0;
+  }
+
+  .biodegradaveis img {
+    width: 26vw;
+    height: auto;
+    margin-right: 22px;
+  }
+
+  .planeta img {
+    display: none;
+  }
+
+  .planeta .image-mobile {
+    width: 26vw;
+    height: auto;
+    margin-left: 45px;
+    display: flex;
+  }
+
+  .biodegradavel-texto h2,
+  .planeta-texto h2 {
+    font-size: 22.5px;
+    text-align: center;
+  }
+
+  .sumir {
+    display: none;
+  }
+
+  .maior {
+    text-transform: uppercase;
+  }
+
+  .biodegradavel-texto p,
+  .planeta-texto p {
+    font-size: 14.5px;
+    width: 70vw;
+    text-align: center;
+    margin: 0 13vw;
+  }
+
+  .linha-sus-dois {
+    background: #522318;
+    height: 4.3px;
+    margin: 32px 10vw;
+    width: 80vw;
+    position: relative;
+    top: 56px;
+  }
+
+  /* fim sustentabilidade */
 
 
 
@@ -3371,6 +3488,115 @@ input::-webkit-inner-spin-button {
     top: 16px;
   }
 
+  /* sustentabilidade */
+  #main-sus {
+    margin-top: 0;
+  }
+
+  .center-sus {
+    display: none;
+  }
+
+  .mobile-sus {
+    display: block;
+    text-align: center;
+    margin-top: 45px;
+  }
+
+  .mobile-sus h1 {
+    font-family: 'Young-serif';
+    color: #3C2520;
+    font-size: 36px;
+  }
+
+  .mobile-sus p {
+    font-family: 'Poppins-regular';
+    font-size: 14.5px;
+    margin: 20px 60px;
+  }
+
+  .mobile-sus .sus-linha {
+    background: #522318;
+    height: 4.3px;
+    margin: 32px 9vw;
+    width: 82vw;
+    border-radius: 10px;
+  }
+
+  .saibaProjeto {
+    padding: 0 0;
+    margin-top: 43px;
+    margin-bottom: 105px;
+  }
+
+  .conteudo-sus h1 {
+    font-size: 28px;
+    width: 40vw;
+    margin-bottom: 26px;
+    margin-top: 26px;
+  }
+
+  .biodegradaveis,
+  .planeta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .planeta {
+    margin-top: 30px;
+  }
+
+  .biodegradavel-texto,
+  .biodegradaveis p,
+  .planeta-texto,
+  .planeta p {
+    padding: 0;
+  }
+
+  .biodegradaveis img {
+    width: 22vw;
+    height: auto;
+    margin-right: 22px;
+  }
+
+  .planeta img {
+    display: none;
+  }
+
+  .planeta .image-mobile {
+    width: 22vw;
+    height: auto;
+    margin-left: 45px;
+    display: flex;
+  }
+
+  .biodegradavel-texto h2,
+  .planeta-texto h2 {
+    font-size: 22.5px;
+    text-align: center;
+  }
+
+ 
+
+  .biodegradavel-texto p,
+  .planeta-texto p {
+    font-size: 14.5px;
+    width: 80vw;
+    text-align: center;
+  }
+
+  .linha-sus-dois {
+    background: #522318;
+    height: 4.3px;
+    margin: 32px 9vw;
+    width: 82vw;
+    position: relative;
+    top: 56px;
+  }
+
+
+  /* fim sustentabilidade */
+
 }
 
 
@@ -3669,5 +3895,115 @@ input::-webkit-inner-spin-button {
   .titulo1 {
     font-size: 26px;
   }
+
+   /* sustentabilidade */
+  
+
+   #main-sus {
+    margin-top: 0;
+  }
+
+  .center-sus {
+    display: none;
+  }
+
+  .mobile-sus {
+    display: block;
+    text-align: center;
+    margin-top: 45px;
+  }
+
+  .mobile-sus h1 {
+    font-family: 'Young-serif';
+    color: #3C2520;
+    font-size: 36px;
+  }
+
+  .mobile-sus p {
+    font-family: 'Poppins-regular';
+    font-size: 16.5px;
+    margin: 20px 126px;
+  }
+
+  .mobile-sus .sus-linha {
+    background: #522318;
+    height: 4.3px;
+    margin: 32px 9.5vw;
+    width: 81vw;
+    border-radius: 10px;
+  }
+
+  .saibaProjeto {
+    padding: 0 0;
+    margin-top: 43px;
+    margin-bottom: 105px;
+  }
+
+  .conteudo-sus h1 {
+    font-size: 29px;
+    width: 32vw;
+    margin-bottom: 26px;
+    margin-top: 26px;
+  }
+
+  .biodegradaveis,
+  .planeta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .planeta {
+    margin-top: 30px;
+  }
+
+  .biodegradavel-texto,
+  .biodegradaveis p,
+  .planeta-texto,
+  .planeta p {
+    padding: 0;
+  }
+
+  .biodegradaveis img {
+    width: 23vw;
+    height: auto;
+    margin-right: 22px;
+  }
+
+  .planeta img {
+    display: none;
+  }
+
+  .planeta .image-mobile {
+    width: 23vw;
+    height: auto;
+    margin-left: 45px;
+    display: flex;
+  }
+
+  .biodegradavel-texto h2,
+  .planeta-texto h2 {
+    font-size: 26.5px;
+    text-align: center;
+  }
+
+  .biodegradavel-texto p,
+  .planeta-texto p {
+    font-size: 16.5px;
+    width: 75vw;
+    text-align: center;
+  }
+
+  .linha-sus-dois {
+    background: #522318;
+    height: 4.3px;
+    margin: 32px 9.5vw;
+    width: 81vw;
+    position: relative;
+    top: 56px;
+  }
+
+
+  /* fim sustentabilidade */
+
 
 }

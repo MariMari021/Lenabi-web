@@ -173,6 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
             li.innerHTML = `
                 <div class="item-carrinho">
                     <span>${item.nome}</span>
+                    <br>
                     <button class="remove" onclick="removeCarrinho('${item.nome}')">-</button>
                     <span class="quantity">${item.quantidade}</span>
                     <button class="add" onclick="addMaisUm('${item.nome}')">+</button>

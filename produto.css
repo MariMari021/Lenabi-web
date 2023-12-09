@@ -3,80 +3,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     background-color: #F8F1EE;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Young-serif';
     src: url(font/YoungSerif-Regular.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Poppins-regular';
     src: url(font/Poppins-Regular.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Poppins-Semi';
     src: url(font/Poppins-SemiBold.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Poppins-medium';
     src: url(font/Poppins-Medium.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Poppins-bold';
     src: url(font/Poppins-Bold.ttf);
-  }
-  
-  #conteudo {
+}
+
+#conteudo {
     margin-top: 49px;
     height: auto;
-  }
-  
-  .setor1Produto h1 {
+}
+
+.setor1Produto h1 {
     font-family: 'Young-serif';
     color: #3C2520;
     font-size: 48px;
     margin-top: 119px;
     margin-left: 198px;
-  }
-  
-  .setor1Produto .mobile {
+}
+
+.setor1Produto .mobile {
     display: none;
-  }
-  
-  
-  .topicos {
+}
+
+
+.topicos {
     display: flex;
     justify-content: space-around;
     margin-top: 97px;
     margin: 97px 165px;
-  }
-  
-  
-  
-  .iconeFolha,
-  .iconeAmazon {
+}
+
+
+
+.iconeFolha,
+.iconeAmazon {
     display: grid;
     font-family: 'Poppins-regular';
     text-align: center;
     justify-items: center;
     font-size: 17.5px;
-  }
-  
-  .iconeFolha,
-  .iconeAmazon p {
+}
+
+.iconeFolha,
+.iconeAmazon p {
     width: 361px;
-  }
-  
-  .cuboMarrom,
-  .cubo2Marrom {
+}
+
+.cuboMarrom,
+.cubo2Marrom {
     display: flex;
     background-color: #3C2520;
     width: 83px;
@@ -85,56 +85,58 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
-  }
-  
-  .cuboMarrom img {
+}
+
+.cuboMarrom img {
     width: 50px;
-  }
-  
-  .cubo2Marrom img {
+}
+
+.cubo2Marrom img {
     width: 60px;
-  }
-  
-  .linha1Produto {
+}
+
+.linha1Produto {
     width: 1111px;
     height: 5px;
     border-radius: 10px;
     background: #4f250d;
     margin: 0 13.3% 0%;
-  }
-  
-  .titulo-pre {
+}
+
+.titulo-pre {
     margin: 2.3% 13.3%;
     ;
-  }
-  
-  .titulo-pre h1 {
+}
+
+.titulo-pre h1 {
     font-family: 'Young-serif';
     color: #3C2520;
     font-size: 48px;
-  }
-  
-  .titulo-pre p {
+}
+
+.titulo-pre p {
     font-family: 'Poppins-regular';
     font-size: 17.5px;
     width: 722px;
-  }
-  
-  .realFundo, .realFundo-mobile, .realFundo2 {
+}
+
+.realFundo,
+.realFundo-mobile,
+.realFundo2 {
     height: 506px;
     background-color: #6D5448;
     display: flex;
     justify-content: space-evenly;
-  }
-  
-  .realFundo-mobile {
+}
+
+.realFundo-mobile {
     display: none;
-  }
-  
-  
-  
-  .livros,
-  .livros-mobile {
+}
+
+
+
+.livros,
+.livros-mobile {
     margin: 5.5% 0;
     padding: 2% 0;
     border-radius: 9px;
@@ -144,10 +146,10 @@
     background-color: #FFEFDF;
     justify-items: center;
     text-align: center;
-  }
-  
-  /* Estilo para a área de busca */
-  .area-de-busca {
+}
+
+/* Estilo para a área de busca */
+.area-de-busca {
     padding-top: 21px;
     display: flex;
     width: 80%;
@@ -161,101 +163,101 @@
     color: #9a594b;
     border-radius: 17px;
     min-height: 470px;
-  }
-  
-  .area-de-busca .livros2 {
+}
+
+.area-de-busca .livros2 {
     margin: 3% 0;
     margin-bottom: 5%;
-  }
-  
-  .area-de-busca .livros {
+}
+
+.area-de-busca .livros {
     margin: 3% 3%;
     background-color: #3C2520;
     color: #FFEFDF;
-  }
-  
-  .area-de-busca .livros h2 {
+}
+
+.area-de-busca .livros h2 {
     color: #FFEFDF;
-  }
-  
-  .area-de-busca .livros .buttonPreco {
+}
+
+.area-de-busca .livros .buttonPreco {
     background-color: #FFEFDF;
     border: 1.5px #3c252075 solid;
     color: #3C2520;
-  }
-  
-  .area-de-busca .livros h3 {
+}
+
+.area-de-busca .livros h3 {
     color: #3C2520;
-  }
-  
-  .area-de-busca .livros img {
+}
+
+.area-de-busca .livros img {
     box-shadow: 7px 7px #E3C7BA;
-  }
-  
-  .area-de-busca .buttonPreco::before {
+}
+
+.area-de-busca .buttonPreco::before {
     background-color: #FFEFDF;
-  }
-  
-  .area-de-busca .buttonPreco:hover::before {
+}
+
+.area-de-busca .buttonPreco:hover::before {
     opacity: 3;
     /* Torna o elemento "hover" visível quando o botão é hover */
     background-color: #FFEFDF;
     /* Muda a cor de fundo quando hover */
-  }
-  
-  
-  
-  .livros2 {
+}
+
+
+
+.livros2 {
     margin: 0;
-  }
-  
-  .livros img,
-  .livros-mobile img {
+}
+
+.livros img,
+.livros-mobile img {
     margin: 0 8.5%;
     border-radius: 3px;
     height: auto;
     width: 148px;
     box-shadow: 7px 7px #B99B8D;
-  }
-  
-  .livros h2,
-  .livros-mobile h2 {
+}
+
+.livros h2,
+.livros-mobile h2 {
     font-family: 'Young-serif';
     font-size: 23px;
     color: #3C2520;
-  }
-  
-  .livros p,
-  .livros-mobile p {
+}
+
+.livros p,
+.livros-mobile p {
     font-family: 'Poppins-regular';
     font-size: 15px;
     padding-bottom: 3.5%;
-  }
-  
-  .buttonPreco {
+}
+
+.buttonPreco {
     left: 43px;
     bottom: 30px;
-  }
-  
-  .preco2 {
+}
+
+.preco2 {
     bottom: 40px;
-  }
-  
-  .buttonPreco h3 {
+}
+
+.buttonPreco h3 {
     padding-left: 7%;
     font-size: 22px;
-  }
-  
-  .l-dois {
+}
+
+.l-dois {
     margin: 3% 13.3%;
-  }
-  
-  .l-tres {
+}
+
+.l-tres {
     margin: 4.7% 13.3%;
-  }
-  
-  
-  .buttonPreco {
+}
+
+
+.buttonPreco {
     display: flex;
     width: 191px;
     height: 47px;
@@ -269,17 +271,17 @@
     overflow: hidden;
     transition: transform 0.2s;
     cursor: pointer;
-  }
-  
-  .buttonPreco h3 {
+}
+
+.buttonPreco h3 {
     padding-left: 7%;
-  }
-  
-  .buttonPreco:hover {
+}
+
+.buttonPreco:hover {
     transform: translateY(-10px);
-  }
-  
-  .buttonPreco::before {
+}
+
+.buttonPreco::before {
     content: "Ver Mais";
     position: absolute;
     top: 0;
@@ -295,573 +297,637 @@
     opacity: 0;
     pointer-events: none;
     /* Evita que o elemento "hover" seja clicável */
-  }
-  
-  .buttonPreco:hover::before {
+}
+
+.buttonPreco:hover::before {
     opacity: 3;
     /* Torna o elemento "hover" visível quando o botão é hover */
     background-color: #3C2520;
     /* Muda a cor de fundo quando hover */
-  }
-  
-  .button a {
+}
+
+.button a {
     display: flex;
-  }
-  
-  @media screen and (max-width: 400px){
-  
+}
+
+@media screen and (max-width: 400px) {
+
     .setor1Produto {
-      text-align: -webkit-center;
+        text-align: -webkit-center;
     }
-  
+
     .setor1Produto h1 {
-      font-size: 32px;
-      width: 75vw;
-      margin: 0;
-      margin-bottom: 20px;
+        font-size: 32px;
+        width: 75vw;
+        margin: 0;
+        margin-bottom: 20px;
     }
-  
+
     .topicos {
-      display: flex;
-      margin-top: 40px;
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
     }
-  
-    .cuboMarrom, .cubo2Marrom {
+
+    .cuboMarrom,
+    .cubo2Marrom {
         width: 18vw;
         height: 18vw;
     }
-  
+
     .cuboMarrom img {
-      width: 8vw;
-    }
-  
-    .cubo2Marrom img {
-      width: 9vw;
+        width: 8vw;
     }
 
-    .iconeFolha{
+    .cubo2Marrom img {
+        width: 9vw;
+    }
+
+    .iconeFolha {
         width: auto;
     }
-  
-    .iconeFolha p, .iconeAmazon p {
-      width: 68vw;
-      font-size: 14.5px;
+
+    .iconeFolha p,
+    .iconeAmazon p {
+        width: 68vw;
+        font-size: 14.5px;
     }
-  
+
     .iconeFolha p {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
-  
+
     .linha1Produto {
         width: 78vw;
         margin: 50px 0px 50px 33px;
     }
-  
+
     .titulo-pre h1 {
-      font-size: 30px;
-      text-align: center;
+        font-size: 30px;
+        text-align: center;
     }
-    
+
     .titulo-pre p {
-      font-size: 14.5px;
-      width: 68vw;
-      text-align: center;
-      margin: 9px 7px 35px;
+        font-size: 14.5px;
+        width: 68vw;
+        text-align: center;
+        margin: 9px 7px 35px;
     }
-  
-    .realFundo, .realFundo2 {
-      display: none;
+
+    .realFundo,
+    .realFundo2 {
+        display: none;
     }
-  
+
     .realFundo-mobile {
-      display: flex;
-      height: 333px;
-      width: 100vw;
-      align-items: center;
-      flex-direction: column;
+        display: flex;
+        height: 333px;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
     }
-  
+
     .livros-mobile {
-      display: none;
-      height: 288px;
-      width: 200px;
-      border-radius: 8px;
+        display: none;
+        height: 288px;
+        width: 200px;
+        border-radius: 8px;
 
     }
-  
+
     .livros-mobile.active {
-      display: block;
+        display: block;
     }
-  
+
     .livros-mobile h2 {
-      font-size: 18px;
+        font-size: 18px;
     }
-  
+
     .livros-mobile p {
-      font-size: 14.5px;
+        font-size: 14.5px;
     }
-  
+
     .livros-mobile img {
-            width: 126px;
-            height: 180px;
+        width: 126px;
+        height: 180px;
     }
-  
+
+    .area-de-busca .livros img {
+        margin: 0;
+    }
+
     .buttonPreco {
         width: 154px;
         height: 38px;
         left: 59px;
         bottom: 10px;
     }
-  
-    .buttonPreco h3 {
-      font-size: 16px;
-    }
-  
-    .botao {
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      width: 76vw;
-      right: 12vw;
-    }
-  
-    .botao button {
-      background: transparent;
-      width: 7vw;
-      height: 10vw;
-    }
-  
-    .botao button i {
-      font-size: 30px;
-      color: white;
-    }
-  
-   .linhamobile {
-      display: none;
-    }
-  
-    .prevenda, .lancamentos-page, .produtos-page {
-      margin-top: -18px;
-    }
-  }
-  
-  @media screen and (max-width: 530px) and (min-width:401px) {
-  
-  .setor1Produto {
-    text-align: -webkit-center;
-  }
-  
-  .setor1Produto h1 {
-    font-size: 32px;
-    width: 75vw;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  
-  .topicos {
-    display: flex;
-    margin-top: 40px;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-  
-  .cuboMarrom, .cubo2Marrom {
-    width: 13vw;
-    height: 13vw;
-  }
-  
-  .cuboMarrom img {
-    width: 8vw;
-  }
-  
-  .cubo2Marrom img {
-    width: 9vw;
-  }
-  
-  .iconeFolha p, .iconeAmazon p {
-    width: 68vw;
-    font-size: 15.5px;
-  }
-  
-  .iconeFolha p {
-    margin-bottom: 20px;
-  }
-  
-  .linha1Produto {
-    width: 78vw;
-    margin: 50px 55px;
-  }
-  
-  .titulo-pre h1 {
-    font-size: 36px;
-    text-align: center;
-  }
-  
-  .titulo-pre p {
-    font-size: 15.5px;
-    width: 68vw;
-    text-align: center;
-    margin-top: 18px;
-    margin: 20px;
-  }
-  
-  .realFundo, .realFundo2 {
-    display: none;
-  }
-  
-  .realFundo-mobile {
-    display: flex;
-    height: 400px;
-    width: 100vw;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .livros-mobile {
-    display: none;
-    height: 328px;
-    width: 224px;
-    border-radius: 9px;
-  }
-  
-  .livros-mobile.active {
-    display: block;
-  }
-  
-  .livros-mobile h2 {
-    font-size: 20px;
-  }
-  
-  .livros-mobile p {
-    font-size: 15.5px;
-  }
-  
-  .livros-mobile img {
-    width: 150px;
 
-  }
-  
-  .buttonPreco {
-    width: 174px;
-    height: 42px;
-    left: 63px;
-    bottom: 32px;
-  }
-  
-  .buttonPreco h3 {
-    font-size: 20px;
-  }
-  
-  .botao {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 76vw;
-    right: 12vw;
-  }
-  
-  .botao button {
-    background: transparent;
-    width: 7vw;
-    height: 10vw;
-  }
-  
-  .botao button i {
-    font-size: 30px;
-    color: white;
-  }
-  
-  .linhamobile {
-    display: none;
-  }
-  
-  .prevenda, .lancamentos-page, .produtos-page {
-    margin-top: -18px;
-  }
-  }
-  
-  @media screen and (max-width: 767px) and (min-width:531px) {
-  .setor1Produto {
-    text-align: -webkit-center;
-  }
-  
-  .setor1Produto h1 {
-    font-size: 36px;
-    width: 58vw;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-  
-  .topicos {
-    display: flex;
-    margin-top: 40px;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-  
-  .cuboMarrom, .cubo2Marrom {
-    width: 11vw;
-    height: 11vw;
-  }
-  
-  .cuboMarrom img {
-    width: 7vw;
-  }
-  
-  .cubo2Marrom img {
-    width: 8vw;
-  }
-  
-  .iconeFolha, .iconeAmazon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .iconeFolha p, .iconeAmazon p {
-    width: 68vw;
-    font-size: 16.5px;
-  }
-  
-  .iconeFolha p {
-    margin-bottom: 20px;
-  }
-  
-  .linha1Produto {
-    width: 72vw;
-    margin: 50px 13.5%;
-  }
-  
-  .titulo-pre h1 {
-    font-size: 36px;
-    text-align: center;
-  }
-  
-  .titulo-pre p {
-    font-size: 16.5px;
-    width: 68vw;
-    text-align: center;
-    margin-top: 18px;
-    margin: 20px;
-  }
-  
-  .realFundo, .realFundo2 {
-    display: none;
-  }
-  
-  .realFundo-mobile {
-    display: flex;
-    height: 460px;
-    width: 100vw;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .livros-mobile {
-    display: none;
-    height: 349px;
-    width: 248px;
-    border-radius: 11px;
-  }
-  
-  .livros-mobile.active {
-    display: block;
-  }
-  
-  .livros-mobile h2 {
-    font-size: 22px;
-  }
-  
-  .livros-mobile p {
-    font-size: 16.5px;
-  }
-  
-  .livros-mobile img {
-    width: 165px;
-    height: 233px;
-  }
-  
-  .buttonPreco {
-    width: 190px;
-    height: 45px;
-    left: 75px;
-    bottom: 36px;
-  }
-  
-  .buttonPreco h3 {
-    font-size: 20px;
-  }
-  
-  .botao {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 76vw;
-    right: 12vw;
-  }
-  
-  .botao button {
-    background: transparent;
-    width: 7vw;
-    height: 10vw;
-  }
-  
-  .botao button i {
-    font-size: 38px;
-    color: white;
-  }
-  
-  .linhamobile {
-    display: none;
-  }
-  
-  .prevenda, .lancamentos-page, .produtos-page {
-    margin-top: -18px;
-  }
-  }
-  
-  @media screen and (min-width:768px) and (max-width:974px) {
-  .setor1Produto {
-    text-align: -webkit-center;
-  }
-  
-  .setor1Produto h1 {
-    font-size: 38px;
-    width: 58vw;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-  
-  .topicos {
-    display: flex;
-    margin-top: 40px;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-  
-  .cuboMarrom, .cubo2Marrom {
-    width: 9vw;
-    height: 9vw;
-  }
-  
-  .cuboMarrom img {
-    width: 6vw;
-  }
-  
-  .cubo2Marrom img {
-    width: 7vw;
-  }
-  
-  .iconeFolha, .iconeAmazon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .iconeFolha p, .iconeAmazon p {
-    width: 69vw;
-    font-size: 16.5px;
-  }
-  
-  .iconeFolha p {
-    margin-bottom: 20px;
-  }
-  
-  .linha1Produto {
-    width: 72vw;
-    margin: 50px 13.5%;
-  }
-  
-  .titulo-pre h1 {
-    font-size: 38px;
-    text-align: center;
-  }
-  
-  .titulo-pre p {
-    font-size: 16.5px;
-    width: 69vw;
-    text-align: center;
-    margin-top: 18px;
-    margin: 20px;
-  }
-  
-  .realFundo, .realFundo2 {
-    display: none;
-  }
-  
-  .realFundo-mobile {
-    display: flex;
-    height: 480px;
-    width: 100vw;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .livros-mobile {
-    display: none;
-    height: 390px;
-    width: 269px;
-    border-radius: 11px;
-  }
-  
-  .livros-mobile.active {
-    display: block;
-  }
-  
-  .livros-mobile h2 {
-    font-size: 22px;
-  }
-  
-  .livros-mobile p {
-    font-size: 16.5px;
-  }
-  
-  .livros-mobile img {
-    width: 183px;
-    height: 258px;
-  }
-  
-  .buttonPreco {
-    width: 208px;
-    height: 47px;
-    left: 74px;
-    bottom: 20px;
-  }
-  
-  .buttonPreco h3 {
-    font-size: 20px;
-  }
-  
-  .botao {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 76vw;
-    right: 12vw;
-  }
-  
-  .botao button {
-    background: transparent;
-    width: 7vw;
-    height: 10vw;
-  }
-  
-  .botao button i {
-    font-size: 38px;
-    color: white;
-  }
-  
-  .linhamobile {
-    display: none;
-  }
-  
-  .prevenda, .lancamentos-page, .produtos-page {
-    margin-top: -18px;
-  }
-  }
+    .area-de-busca .livros .buttonPreco {
+        bottom: 12px;
+        left: 45px;
+        width: 175px;
+        height: 43px;
+    }
+
+    .area-de-busca .livros h3 {
+        color: #3C2520;
+        font-size: 21px;
+    }
+
+    .buttonPreco h3 {
+        font-size: 16px;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 76vw;
+        right: 12vw;
+    }
+
+    .botao button {
+        background: transparent;
+        width: 7vw;
+        height: 10vw;
+    }
+
+    .botao button i {
+        font-size: 30px;
+        color: white;
+    }
+
+    .linhamobile {
+        display: none;
+    }
+
+    .prevenda,
+    .lancamentos-page,
+    .produtos-page {
+        margin-top: -18px;
+    }
+}
+
+@media screen and (max-width: 530px) and (min-width:401px) {
+
+    .setor1Produto {
+        text-align: -webkit-center;
+    }
+
+    .setor1Produto h1 {
+        font-size: 32px;
+        width: 75vw;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .topicos {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .cuboMarrom,
+    .cubo2Marrom {
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .cuboMarrom img {
+        width: 8vw;
+    }
+
+    .cubo2Marrom img {
+        width: 9vw;
+    }
+
+    .iconeFolha p,
+    .iconeAmazon p {
+        width: 68vw;
+        font-size: 15.5px;
+    }
+
+    .iconeFolha p {
+        margin-bottom: 20px;
+    }
+
+    .linha1Produto {
+        width: 78vw;
+        margin: 50px 55px;
+    }
+
+    .titulo-pre h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .titulo-pre p {
+        font-size: 15.5px;
+        width: 68vw;
+        text-align: center;
+        margin-top: 18px;
+        margin: 20px;
+    }
+
+    .realFundo,
+    .realFundo2 {
+        display: none;
+    }
+
+    .realFundo-mobile {
+        display: flex;
+        height: 400px;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .livros-mobile {
+        display: none;
+        height: 328px;
+        width: 224px;
+        border-radius: 9px;
+    }
+
+    .livros-mobile.active {
+        display: block;
+    }
+
+    .livros-mobile h2 {
+        font-size: 20px;
+    }
+
+    .livros-mobile p {
+        font-size: 15.5px;
+    }
+
+    .livros-mobile img {
+        width: 150px;
+
+    }
+
+    .buttonPreco {
+        width: 174px;
+        height: 42px;
+        left: 63px;
+        bottom: 32px;
+    }
+
+    .area-de-busca .livros .buttonPreco {
+        bottom: 20px;
+        left: 43px;
+        height: 43px;
+    }
+
+    .buttonPreco h3 {
+        font-size: 20px;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 76vw;
+        right: 12vw;
+    }
+
+    .botao button {
+        background: transparent;
+        width: 7vw;
+        height: 10vw;
+    }
+
+    .botao button i {
+        font-size: 30px;
+        color: white;
+    }
+
+    .linhamobile {
+        display: none;
+    }
+
+    .prevenda,
+    .lancamentos-page,
+    .produtos-page {
+        margin-top: -18px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width:531px) {
+    .setor1Produto {
+        text-align: -webkit-center;
+    }
+
+    .setor1Produto h1 {
+        font-size: 36px;
+        width: 58vw;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .topicos {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .cuboMarrom,
+    .cubo2Marrom {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .cuboMarrom img {
+        width: 7vw;
+    }
+
+    .cubo2Marrom img {
+        width: 8vw;
+    }
+
+    .iconeFolha,
+    .iconeAmazon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconeFolha p,
+    .iconeAmazon p {
+        width: 68vw;
+        font-size: 16.5px;
+    }
+
+    .iconeFolha p {
+        margin-bottom: 20px;
+    }
+
+    .linha1Produto {
+        width: 72vw;
+        margin: 50px 13.5%;
+    }
+
+    .titulo-pre h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .titulo-pre p {
+        font-size: 16.5px;
+        width: 68vw;
+        text-align: center;
+        margin-top: 18px;
+        margin: 20px;
+    }
+
+    .realFundo,
+    .realFundo2 {
+        display: none;
+    }
+
+    .realFundo-mobile {
+        display: flex;
+        height: 460px;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .livros-mobile {
+        display: none;
+        height: 349px;
+        width: 248px;
+        border-radius: 11px;
+    }
+
+    .livros-mobile.active {
+        display: block;
+    }
+
+    .livros-mobile h2 {
+        font-size: 22px;
+    }
+
+    .livros-mobile p {
+        font-size: 16.5px;
+    }
+
+    .livros-mobile img {
+        width: 165px;
+        height: 233px;
+    }
+
+    .area-de-busca .livros img {
+        box-shadow: 7px 7px #E3C7BA;
+        width: 151px;
+        height: 225px;
+    }
+
+    .buttonPreco {
+        width: 190px;
+        height: 45px;
+        left: 75px;
+        bottom: 36px;
+    }
+
+    .area-de-busca .livros .buttonPreco{
+        width: 174px;
+        height: 44px;
+        left: 46px;
+        bottom: 22px;
+    }
+
+    .buttonPreco h3 {
+        font-size: 20px;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 76vw;
+        right: 12vw;
+    }
+
+    .botao button {
+        background: transparent;
+        width: 7vw;
+        height: 10vw;
+    }
+
+    .botao button i {
+        font-size: 38px;
+        color: white;
+    }
+
+    .linhamobile {
+        display: none;
+    }
+
+    .prevenda,
+    .lancamentos-page,
+    .produtos-page {
+        margin-top: -18px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:974px) {
+    .setor1Produto {
+        text-align: -webkit-center;
+    }
+
+    .setor1Produto h1 {
+        font-size: 38px;
+        width: 58vw;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .topicos {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .cuboMarrom,
+    .cubo2Marrom {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .cuboMarrom img {
+        width: 6vw;
+    }
+
+    .cubo2Marrom img {
+        width: 7vw;
+    }
+
+    .iconeFolha,
+    .iconeAmazon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconeFolha p,
+    .iconeAmazon p {
+        width: 69vw;
+        font-size: 16.5px;
+    }
+
+    .iconeFolha p {
+        margin-bottom: 20px;
+    }
+
+    .linha1Produto {
+        width: 72vw;
+        margin: 50px 13.5%;
+    }
+
+    .titulo-pre h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .titulo-pre p {
+        font-size: 16.5px;
+        width: 69vw;
+        text-align: center;
+        margin-top: 18px;
+        margin: 20px;
+    }
+
+    .realFundo,
+    .realFundo2 {
+        display: none;
+    }
+
+    .realFundo-mobile {
+        display: flex;
+        height: 480px;
+        width: 100vw;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .livros-mobile {
+        display: none;
+        height: 390px;
+        width: 269px;
+        border-radius: 11px;
+    }
+
+    .livros-mobile.active {
+        display: block;
+    }
+
+    .livros-mobile h2 {
+        font-size: 22px;
+    }
+
+    .livros-mobile p {
+        font-size: 16.5px;
+    }
+
+    .livros-mobile img {
+        width: 183px;
+        height: 258px;
+    }
+
+    .buttonPreco {
+        width: 208px;
+        height: 47px;
+        left: 74px;
+        bottom: 20px;
+    }
+
+    .area-de-busca .livros .buttonPreco{
+        width: 172px;
+        height: 47px;
+        left: 44px;
+    }
+
+
+    .buttonPreco h3 {
+        font-size: 20px;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 76vw;
+        right: 12vw;
+    }
+
+    .botao button {
+        background: transparent;
+        width: 7vw;
+        height: 10vw;
+    }
+
+    .botao button i {
+        font-size: 38px;
+        color: white;
+    }
+
+    .linhamobile {
+        display: none;
+    }
+
+    .prevenda,
+    .lancamentos-page,
+    .produtos-page {
+        margin-top: -18px;
+    }
+}

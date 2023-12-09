@@ -40,6 +40,10 @@ body {
 }
 
 
+#buscarMobile{
+  color: #FFEFDF;
+}
+
 /* favoritos */
 #carrinho-itens {
   position: absolute;

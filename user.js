@@ -157,6 +157,12 @@ document.addEventListener("DOMContentLoaded", function () {
         carrinhoItensDiv.style.display = carrinhoItensDiv.style.display === "none" ? "block" : "none";
     }
 
+
+    document.getElementById("favoritos-link").addEventListener("click", function (event) {
+        event.preventDefault();
+        toggleFavoritos();
+    });
+
     function limparCarrinho() {
         carrinhoItens.length = 0;
         atualizarCarrinho();
@@ -186,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         precoTotalSpan.textContent = `Valor Total: R$${total.toFixed(2)}`;
         contFavoritosSpan.textContent = carrinhoItens.reduce((acc, item) => acc + item.quantidade, 0).toString();
-        limparCarrinhoBtn.style.display = "block" ;
+        limparCarrinhoBtn.style.display = "block";
     }
 
     function addToCart(nome, preco) {
@@ -245,16 +251,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const valorInicialElement = btn.nextElementSibling; // assume que p.espec-coracao é irmão do botão
             const produtoNome = btn.getAttribute("data-produto-nome");
             const produtoNoCarrinho = carrinhoItens.find(item => item.nome === produtoNome);
-    
+
             coracaoVazio.style.display = produtoNoCarrinho ? "none" : "block";
             coracaoPintado.style.display = produtoNoCarrinho ? "block" : "none";
-    
+
             // Atualiza o valor inicial com base no estado do coração
             if (produtoNoCarrinho) {
                 // Se o produto está no carrinho, verifica se já foi incrementado nesta atualização
                 const valorAtual = parseInt(valorInicialElement.textContent);
                 const valorInicial = parseInt(valorInicialElement.getAttribute("data-valor-inicial"));
-    
+
                 if (valorAtual === valorInicial) {
                     // Incrementa uma unidade apenas se ainda não foi incrementado
                     valorInicialElement.textContent = (valorAtual + 1).toString();
@@ -265,15 +271,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 valorInicialElement.textContent = valorInicial.toString();
             }
         });
-    
+
         // Atualiza a quantidade de itens no carrinho
         contFavoritosSpan.textContent = carrinhoItens.reduce((acc, item) => acc + item.quantidade, 0).toString();
     }
-    
-    
-    
-    
-    
+
+
+
+
+
 
     const produtinhoBtns = document.querySelectorAll(".produtinhos");
     produtinhoBtns.forEach(produtinhoBtn => {

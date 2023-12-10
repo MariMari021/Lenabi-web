@@ -45,19 +45,24 @@
                 </button>
             </div>
         </div>
-        <nav>
+        <nav class="login-cadastro">
             
         </nav>
         <nav class="navbar">
             <nav>
                 <div class=" botoes-login">
+                    <a href="index.html">Home</a>
                     <a href="produto.html#pre-venda">Pré-Venda</a>
                     <a href="produto.html#lancamentos-page">Lançamentos</a>
                     <a href="produto.html">Produtos</a>
                     <a href="sustentabilidade.html">Sustentabilidade</a>
-                    <a href="sustentabilidade.html">Favoritos</a>
+                    <a onclick="toggleFav()" href="#">Favoritos</a>
                     <a href="sobre-nos.html">Sobre nós</a>
-                    <a  href="login.html">Login</a>
+                    <a id="sideUser" href="login.html">Login</a>
+                    <div class="logado-mobile" id="userHeaderMobile" onclick="toggleMobile()">
+                        <i class="fa-solid fa-user" style="color: #522318;"></i>
+                        <span id="userMobile"></span>
+                    </div>
                 </div>
             </nav>
         </nav>
@@ -133,6 +138,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="user.js"></script>
+
     <script type="text/javascript">
 
 
@@ -201,7 +209,6 @@
 
         })
 
-        const toggleMenu = () => document.body.classList.toggle("open");
 
         function buscarProduto() {
             const termoDeBusca = document.getElementById("buscar").value.toLowerCase();

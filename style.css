@@ -297,6 +297,12 @@ li span {
 
 }
 
+.login-cadastro{
+  background-color: #3C2520;
+  height: 35px;
+  width: 100%;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -1659,7 +1665,12 @@ footer {
 }
 
 .conteudo-login {
-  margin: 98px 169px 0;
+  margin: 98px 169px 0 234px;
+}
+
+.img-cadastro{
+  width: 600px;
+  height: 1156px;
 }
 
 .linha-titulo {
@@ -1990,10 +2001,6 @@ input::-webkit-inner-spin-button {
   padding-top: 23px;
 }
 
-.img-cadastro {
-  width: 634px;
-  height: 1160px;
-}
 
 /* fim cadastro */
 
@@ -2398,6 +2405,7 @@ input::-webkit-inner-spin-button {
 
   #userHeaderMobile {
     padding-top: 10px;
+    display: none;
   }
 
   .navbar a,
@@ -2410,7 +2418,7 @@ input::-webkit-inner-spin-button {
     border: 0;
     padding: 0;
     background: transparent;
-    color: #585c62;
+    color: #3C2520;
     cursor: pointer;
     font-family: inherit;
     justify-content: start;
@@ -2545,7 +2553,7 @@ input::-webkit-inner-spin-button {
   .popupMobileAll #emailMobile{
     font-size: 15px;
     overflow-wrap: break-word; /* Esta propriedade permite quebrar palavras */
-    max-width: 149px;
+    max-width: 161px;
     text-align: center;
   }
 
@@ -2651,7 +2659,7 @@ input::-webkit-inner-spin-button {
   }
 
   .linha-titulo {
-    width: 339px;
+    width: 313px;
   }
 
   .usuario input::placeholder {
@@ -2800,6 +2808,10 @@ input::-webkit-inner-spin-button {
   #header,
   .container-fundo {
     height: 77px;
+  }
+
+  .login-cadastro{
+    display: none;
   }
 
   .line-sobre {
@@ -3041,6 +3053,10 @@ input::-webkit-inner-spin-button {
     height: 96px;
   }
 
+  .login-cadastro{
+    display: none;
+  }
+
   .logo h2 {
     font-size: 23.56px;
   }
@@ -3195,6 +3211,7 @@ input::-webkit-inner-spin-button {
 
   #userHeaderMobile {
     padding-top: 10px;
+    display: none;
   }
 
   .navbar nav {
@@ -3236,6 +3253,11 @@ input::-webkit-inner-spin-button {
   .telefone input {
     width: 321px;
     padding: 16px 84px;
+  }
+
+  .outros-registros{
+    display: grid;
+    justify-items: center;
   }
 
   .outros-registros button {
@@ -3281,7 +3303,7 @@ input::-webkit-inner-spin-button {
   }
 
   .linha-titulo {
-    width: 339px;
+    width: 313px;
   }
 
   .usuario input::placeholder {
@@ -3308,6 +3330,7 @@ input::-webkit-inner-spin-button {
 
   .outros-registros p {
     font-size: 13.8px;
+    width: 250px;
   }
 
   .usuario i {
@@ -3340,9 +3363,7 @@ input::-webkit-inner-spin-button {
     justify-items: center;
   }
 
-  #loginButton{
-    display: none;
-  }
+
   .container-login,
   .container {
     padding: 14px 0;
@@ -3634,7 +3655,7 @@ input::-webkit-inner-spin-button {
     border: 0;
     padding: 0;
     background: transparent;
-    color: #585c62;
+    color: #3C2520;
     cursor: pointer;
     font-family: inherit;
     justify-content: start;
@@ -3667,6 +3688,10 @@ input::-webkit-inner-spin-button {
   #header,
   .container-fundo {
     height: 112px;
+  }
+
+  .login-cadastro{
+    display: none;
   }
 
   .logo h2 {
@@ -3717,6 +3742,7 @@ input::-webkit-inner-spin-button {
 
   #userHeaderMobile {
     padding-top: 10px;
+    display: none;
   }
 
   #buscarMobile {
@@ -3842,6 +3868,10 @@ input::-webkit-inner-spin-button {
 
   .conteudo-login {
     margin: 50px 232px 0;
+  }
+
+  .img-cadastro{
+    display: none;
   }
 
   .logo-footer {

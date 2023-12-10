@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="produto.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="stylemobile.css">
+    <style>
+        .realFundo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
     <!-- <script src="user.js"></script> -->
 
 </head>
@@ -67,7 +74,7 @@
                     </button>
                 </div>
             </div>
-            <nav class="navbar" >
+            <nav class="navbar">
                 <div class="buscarMobile">
                     <input type="text" spellcheck="false" class="buscarMobile" id="buscarMobile"
                         placeholder="Buscar livro" oninput="buscarMobile()">
@@ -97,17 +104,37 @@
                             <span id="conteudoMobile"></span>
                             <span id="emailMobile"></span>
                             <br>
-                            
+
                         </div>
-                       <button class="botaoSairMobile" onclick="logout()"> <p>Sair</p>
-                            <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"
-                                ></i></button>
+                        <button class="botaoSairMobile" onclick="logout()">
+                            <p>Sair</p>
+                            <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
                     </div>
-                    
+
+                </nav>
+            </nav>
+            <nav class="navbarFav">
+                <nav>
+                    <div id="popupMobile">
+                        <div class="popupMobileAll">
+                            <img src="img-interface/Group 20.svg" alt="">
+                            <span id="conteudoMobile"></span>
+                            <span id="emailMobile"></span>
+                            <br>
+
+                        </div>
+                        <button class="botaoSairMobile" onclick="logout()">
+                            <p>FAVORITOS FAZER NAO CONFUNDIR AAAA</p>
+                            <p>Sair</p>
+                            <i id="logoutButtonMobile" class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
+                    </div>
+
                 </nav>
             </nav>
         </div>
-       
+
 
         </div>
         </div>
@@ -162,8 +189,10 @@
                             </div>
                             <div class="image-card">
                                 <button class="produtinhos" data-produto-nome="Os Irmãos Hawthorne" data-preco="68.90">
-                                    <img class="icon-coracao" src="img produto/coracao icone.png" alt="produto icone" id="coracao-vazio-1">
-                                    <img class="icon-coracaoP" src="img produto/cora-pintado.png" alt="produto icone" id="coracao-pintado-1" style="display: none;">
+                                    <img class="icon-coracao" src="img produto/coracao icone.png" alt="produto icone"
+                                        id="coracao-vazio-1">
+                                    <img class="icon-coracaoP" src="img produto/cora-pintado.png" alt="produto icone"
+                                        id="coracao-pintado-1" style="display: none;">
                                 </button>
                                 <p class="espec-coracao" id="contador-coracao-1" data-ativo="false"
                                     data-valor-inicial="153">
@@ -213,7 +242,7 @@
                 <div class="livros">
                     <h2>Vol.1</h2>
                     <p>Stephanie G.</p>
-                    <a href="">
+                    <a href="index13.html">
                         <img src="img produto/coração partido.webp" alt="era uma vez um coração partido">
                         <div class="buttonPreco">
                             <h3>R$44,90</h3>
@@ -225,7 +254,7 @@
                 <div class="livros">
                     <h2>Vol.2</h2>
                     <p>Stephanie G.</p>
-                    <a href="">
+                    <a href="index18.html">
                         <img src="img produto/felizes para nunca.webp" alt="felizes para nunca">
                         <div class="buttonPreco">
                             <h3>R$43,11</h3>
@@ -237,7 +266,7 @@
                 <div class="livros">
                     <h2>Vol.3</h2>
                     <p>Stephanie G.</p>
-                    <a href="">
+                    <a href="index17.html">
                         <img src="img produto/maldição do amor.webp" alt="maldição do amor">
                         <div class="buttonPreco">
                             <h3>R$64,90</h3>
@@ -258,12 +287,13 @@
         <div class="container-footer">
             <nav>
                 <div class="parte1">
-                    <a href="index.html#but">Produtos</a>
-                    <a href="index.html#lancamentos" class="footer-desktop">Lançamentos</a>
-                    <a href="index.html#header" class="footer-desktop">Pré-venda</a>
+                    <a href="produto.html">Produtos</a>
+                    <a href="produto.html#lancamentos-page" class="footer-desktop">Lançamentos</a>
+                    <a href="produto.html#pre-venda" class="footer-desktop">Pré-venda</a>
                 </div>
                 <div class="parte2">
-                    <a href="#" class="footer-desktop">Favoritos</a>
+                    <a href="#" class="footer-desktop" id="favoritos-link">Favoritos</a>
+
                     <a href="sustentabilidade.html">Sustentabilidade</a>
                     <a href="sobre-nos.html">Sobre nós</a>
                 </div>
@@ -293,8 +323,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.3/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
     <script>
-         //barra de pesquisa
-         function buscarProduto() {
+        //barra de pesquisa
+        function buscarProduto() {
             const termoDeBusca = document.getElementById("buscar").value.toLowerCase();
             const main = document.getElementById("main");
             main.innerHTML = ""; // Limpa o conteúdo atual
@@ -374,12 +404,12 @@
 
 
         document.addEventListener('DOMContentLoaded', function () {
-           renderizarCabecalho();
-       });
+            renderizarCabecalho();
+        });
 
-       
+
     </script>
-    
+
 
 
     <!-- <script src="user.js"></script> -->
